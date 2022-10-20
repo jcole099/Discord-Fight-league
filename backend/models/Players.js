@@ -5,7 +5,7 @@ const playersSchema = new mongoose.Schema({
 		type: String,
 		required: [true, 'A player must have a name'],
 	},
-	playerId: {
+	playerID: {
 		type: Number,
 		required: true,
 		unique: [true, 'Limited to one player per discord account'],

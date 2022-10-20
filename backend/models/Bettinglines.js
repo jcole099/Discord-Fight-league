@@ -24,6 +24,6 @@ const createLinesSchema = new mongoose.Schema({
 	},
 });
 
-const Bettinglines = mongoose.model('Bettinglines', createLinesSchema);
+const Bettinglines = mongoose.model('Bettinglines', createLinesSchema); //mongoose creates the collection with all lowercase, adds an 's' if not present
 
 module.exports = Bettinglines;
