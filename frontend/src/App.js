@@ -1,23 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
 
+//Import Dependencies
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+
+//Import components
+import Navigation from './components/Navigation.js';
+
+//Import Pages
+import Rankings from './pages/Rankings.js';
+
 function App() {
+	const year = new Date().getFullYear();
+
+	const [isActive, setActive] = useState(false);
+	const toggleClass = () => {
+		setActive(!isActive);
+	};
+
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload. TESTING.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
+			<header className={isActive ? 'Appheader nav-open' : 'Appheader'}>
+				<img src="/img/dfl_logo.png" alt="DFL Logo" className="logo"></img>
+				<div className="navTitleBar">
+					<h1>
+						<span>DISCORD FIGHT</span> LEAGUE
+					</h1>
+					<Navigation clicker={toggleClass} />
+				</div>
 			</header>
+			<main className="Appmain">
+				<Routes>
+					<Route path="/" exact element={<Rankings />} />
+				</Routes>
+			</main>
+			<footer className="Appfooter">
+				<span>&copy; {year} James Cole</span>
+			</footer>
 		</div>
 	);
 }

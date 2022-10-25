@@ -1,38 +1,501 @@
+/*---------------------------------------------------------*/
+/* COLORS */
+/*---------------------------------------------------------*/
+
+:root {
+  --dflred: #ed1c24;
+  --dflblack: #000000;
+  --dflblackgray: #1a1a1a;
+  --dflblackgraygray: #2e2e2e;
+  --dflgray: rgb(165, 165, 165);
+  --dflwhite: #f1f1f1;
+  --dflwhitegray: #c7c7c7;
+  --dflmasters: #ff4500;
+  --dflruby: #e0115f;
+  --dfldiamond: #52aec4;
+  --dflgold: #ffd700;
+  --dflsilver: #e5e4e2;
+  --dflbronze: #cd7f32;
+}
+
+/*---------------------------------------------------------*/
+/* MOBILE NAVIGATION */
+/*---------------------------------------------------------*/
+
+.btnMobileNavX {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--dflwhite);
+  display: none;
+}
+
+.btnMobileNavM {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--dflwhite);
+  display: none;
+}
+
+.iconMobileNav {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.iconMobileNav[name="close-outline"] {
+  display: block;
+}
+
+.iconMobileNav[name="menu-outline"] {
+  display: block;
+}
+
+/*---------------------------------------------------------*/
+/* GLOBALS */
+/*---------------------------------------------------------*/
+
+@font-face {
+  font-family: "NeuropoliticalRg-Regular";
+  src: url("../public/neuropolitical_rg.eot") format("eot"),
+    url("../public/neuropolitical_rg.woff") format("woff"),
+    url("../public/neuropolitical_rg.ttf") format("truetype"),
+    url("../public/neuropolitical_rg.svg#NeuropoliticalRg-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /*hides anything that is off the page horizontally. parent element of slid-off element must have position: relative */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  color: var(--dflwhite);
   min-height: 100vh;
+  background-color: var(--dflblackgraygray);
+  align-content: center;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  align-items: center;
+}
+
+.Appheader {
+  /* border: 3px solid purple; */
+  display: flex;
+  padding: 10px;
+  background-color: var(--dflblack);
+  width: 90%;
+  max-width: 1000px;
+  border: 1px solid var(--dflgray);
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.Appmain {
+  font-size: 1rem;
+  background-color: var(--dflblack);
+  width: 90%;
+  max-width: 1000px;
+  border: 1px solid var(--dflgray);
+  border-radius: 5px;
+  margin: auto;
+  flex-grow: 1;
+  margin-bottom: 5px;
+}
+
+.Appfooter {
+  border-top: 1px solid var(--dflgray);
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--dflblack);
+  font-size: 8px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.articlePage {
+  height: 100%;
+  padding-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  color: var(--dflred);
+  padding: 20px;
+  margin: auto;
+  font-size: 2rem;
+  font-family: "NeuropoliticalRg-Regular";
+}
+
+.articleDescription {
+  margin-left: 3.125rem;
+  margin-right: 3.125rem;
+}
+
+.articlePage li {
+  margin-left: 1.5625rem;
+  margin-top: 10px;
+}
+
+.subList {
+  margin-left: 2.5rem;
+}
+
+td {
+  padding-right: 10px;
+  max-width: 2rem;
+}
+
+th {
+  padding-right: 10px;
+}
+
+h1 {
+  font-family: "NeuropoliticalRg-Regular";
+  font-size: 3rem;
+}
+
+/*---------------------------------------------------------*/
+/* HEADER */
+/*---------------------------------------------------------*/
+
+.Appheader a {
+  text-decoration: none;
+  color: var(--dflwhitegray);
+  position: relative;
+}
+
+h1 span {
+  color: var(--dflred);
+}
+
+.navTitleBar {
+  /* border: 3px solid white; */
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  background-color: var(--dflblack);
+  display: inline-block;
+}
+.navBar {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-image: linear-gradient(to right, var(--dflwhite), var(--dflblack));
+  position: relative;
+}
+
+.navBarInner {
+  display: flex;
+  background-color: var(--dflblack);
+}
+
+.navBarSpacer {
+  width: 2.5rem;
+  /* border: 3px solid red; */
+}
+
+.navBarLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.navButton {
+  padding: 0.3125rem;
+  color: var(--dflwhitegray);
+  text-decoration: none;
+  transition: color 0.25s;
+  cursor: pointer;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.navButton:hover {
+  color: var(--dflred);
+}
+
+.logo {
+  height: 9.375rem;
+  display: inline-block;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.pleaseWork {
+  display: flex;
+  flex-direction: row;
+}
+
+/*---------------------------------------------------------*/
+/* RANKINGS PAGE */
+/*---------------------------------------------------------*/
+.rankingsPage {
+  color: var(--dflblack);
+  padding-bottom: 20px;
+}
+
+.mastersTitle {
+  width: 50%;
+  background-image: linear-gradient(
+    to right,
+    var(--dflmasters),
+    var(--dflblackgray)
+  );
+  transform: skew(-45deg);
+  margin-left: 20px;
+  border: 1px solid var(--dflmasters);
+}
+
+.mastersTitle p {
+  margin-left: 30px;
+  transform: skew(45deg);
+}
+
+.eliteTitle {
+  width: 50%;
+  background-image: linear-gradient(
+    to right,
+    var(--dflred),
+    var(--dflblackgray)
+  );
+  transform: skew(-45deg);
+  margin-left: 20px;
+  border: 1px solid var(--dflred);
+}
+
+.eliteTitle p {
+  margin-left: 30px;
+  transform: skew(45deg);
+}
+
+.diamondTitle {
+  width: 50%;
+  color: var(--dflblack);
+  background-image: linear-gradient(
+    to right,
+    var(--dfldiamond),
+    var(--dflblackgray)
+  );
+  transform: skew(-45deg);
+  margin-left: 20px;
+  border: 1px solid var(--dfldiamond);
+}
+
+.diamondTitle p {
+  margin-left: 30px;
+  transform: skew(45deg);
+}
+
+.goldTitle {
+  width: 50%;
+  color: var(--dflblack);
+  background-image: linear-gradient(
+    to right,
+    var(--dflgold),
+    var(--dflblackgray)
+  );
+  transform: skew(-45deg);
+  margin-left: 20px;
+  border: 1px solid var(--dflgold);
+}
+
+.goldTitle p {
+  margin-left: 30px;
+  transform: skew(45deg);
+}
+
+.silverTitle {
+  width: 50%;
+  background-image: linear-gradient(
+    to right,
+    var(--dflsilver),
+    var(--dflblackgray)
+  );
+  transform: skew(-45deg);
+  margin-left: 20px;
+  border: 1px solid var(--dflsilver);
+}
+
+.silverTitle p {
+  margin-left: 30px;
+  transform: skew(45deg);
+}
+
+.bronzeTitle {
+  width: 50%;
+  color: var(--dflblack);
+  background-image: linear-gradient(
+    to right,
+    var(--dflbronze),
+    var(--dflblackgray)
+  );
+  transform: skew(-45deg);
+  margin-left: 20px;
+  border: 1px solid var(--dflbronze);
+}
+
+.bronzeTitle p {
+  margin-left: 30px;
+  transform: skew(45deg);
+}
+
+.downIcon {
+  color: var(--dflred);
+}
+
+.upIcon {
+  color: rgb(0, 175, 0);
+}
+
+.thead {
+  border: 3px solid red;
+}
+
+table {
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: calc(100% - 100px); /*100% of parent, minus 50px on each side */
+  border: 1px solid var(--dflgray);
+}
+
+table td {
+  color: var(--dflwhite);
+}
+
+table th {
+  color: var(--dflwhite);
+  background-color: var(--dflblackgray);
+  height: 30px;
+  text-align: left;
+  border-bottom: 1px dashed var(--dflwhite);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--dflblackgraygray);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--dflblackgray);
+}
+
+/* dashed white line on rankings page */
+.playerRowUp {
+  border-bottom: 0.125rem dashed var(--dflwhite);
+}
+
+/* dashed red line on rankings page */
+.playerRowDown {
+  border-top: 0.125rem dashed var(--dflred);
+}
+
+/*---------------------------------------------------------*/
+/* HOW TO PLAY PAGE */
+/*---------------------------------------------------------*/
+.articlePage a {
+  color: var(--dflwhite);
+}
+
+.articlePage p {
+  margin-top: 10px;
+}
+
+.articlePage img {
+  width: 400px;
+  margin-top: 10px;
+  border: 3px solid white;
+  border-radius: 3px;
+}
+
+.secondIndent {
+  margin-left: 3.125rem;
+}
+
+.innerList {
+  margin-left: 0.9375rem;
+  padding-top: 5px;
+}
+
+.mainList {
+  margin-top: 15px;
+}
+
+.listBreaker {
+  height: 3px;
+  background-image: linear-gradient(
+    to right,
+    var(--dflblack),
+    var(--dflred),
+    var(--dflblack)
+  );
+  width: 75%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+/*---------------------------------------------------------*/
+/* WHAT IS DFL? */
+/*---------------------------------------------------------*/
+.whatisdflDescription ul {
+  margin-left: 0.9375rem;
+}
+
+.whatisdflDescription li {
+  padding-top: 10px;
+}
+
+/*---------------------------------------------------------*/
+/* DONATE */
+/*---------------------------------------------------------*/
+.donateButtonOutter {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donateButton {
+  border: 10px solid var(--dflgray);
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transition: border 0.5s;
+}
+
+.donateButton:hover {
+  border: 10px solid var(--dflwhite);
+  cursor: pointer;
+}
+
+/*---------------------------------------------------------*/
+/* RULES */
+/*---------------------------------------------------------*/
+.articlePage h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*---------------------------------------------------------*/
+/* FOOTER */
+/*---------------------------------------------------------*/
+.Appfooter span {
+  display: block;
 }

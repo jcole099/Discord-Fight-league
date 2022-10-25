@@ -1,6 +1,9 @@
 //dmc_run ID: 260648339320733696
+//Hailey IP: 104.168.19.177:59110
 
 //IMPORTS
+const Players = require('./models/Players');
+const express = require('express');
 const commandController = require('./commandController.js');
 const fs = require('fs');
 const mongoose = require('mongoose');
@@ -15,6 +18,12 @@ const {
 } = require('discord.js'); //partials included for dm functionality
 dotenv.config({ path: './config.env' });
 
+//GLOBAL EXPRESS VARIABLES
+const app = express();
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 //Global discord variable
 //Intents give the bot specific access to information.
 const client = new Client({
@@ -27,7 +36,7 @@ const client = new Client({
 	],
 	partials: [Partials.Message, Partials.Channel],
 });
-//hello
+
 //SETTING UP COMMAND LIBRARY
 client.commands = new Collection();
 const commandsPath = path.join(__dirname, 'controllers');
@@ -73,3 +82,21 @@ mongoose
 	});
 
 client.login(process.env.TOKEN);
+
+//EXPRESS ROUTES
+app.get('/players', async (req, res) => {
+	//http://104.168.19.177:59110/players
+	//http://discordfightleague.com:59110/players
+	try {
+		const getPlayersQuery = await Players.find();
+		await res.status(200).json(getPlayersQuery);
+	} catch (error) {
+		console.error(error);
+		res.status(500).json({ Error: 'Request Failed' });
+	}
+});
+
+//INITIALIZE EXPRESS SERVER
+app.listen(process.env.EXPRESSPORT, () => {
+	console.log(`Express ready -> Port ${process.env.EXPRESSPORT}`);
+});
