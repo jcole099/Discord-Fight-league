@@ -12,12 +12,12 @@ function Table({ players, specialTier }) {
 	//elite tier doesnt use percentages, therefore hardcode location.
 	if (specialTier === 1) {
 		rankUpNum = -1;
-		rankDownNum = 8;
+		rankDownNum = 7;
 	}
 
 	//masters tier hardcodes top white line
 	if (specialTier === 2) {
-		rankUpNum = 1;
+		rankUpNum = 2;
 	}
 
 	return (

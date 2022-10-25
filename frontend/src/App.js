@@ -22,7 +22,7 @@ function App() {
 	return (
 		<div className="App">
 			<header className={isActive ? 'Appheader nav-open' : 'Appheader'}>
-				<img src="/img/dfl_logo.png" alt="DFL Logo" className="logo"></img>
+				<img src="./img/dfl_logo.png" alt="DFL Logo" className="logo"></img>
 				<div className="navTitleBar">
 					<h1>
 						<span>DISCORD FIGHT</span> LEAGUE

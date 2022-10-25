@@ -54,7 +54,7 @@ function Row({ player, rank, rankup, rankdown }) {
 			</td>
 			<td className={customClassName}>
 				{(() => {
-					let rankings = player.previousRankings;
+					let rankings = player.rankingHistory;
 					//get last element of array
 					let lastRank = rankings[rankings.length - 1];
 
@@ -62,7 +62,7 @@ function Row({ player, rank, rankup, rankdown }) {
 					//iterate until ":"
 					let season = '';
 					for (const letter of lastRank) {
-						if (letter != ':') {
+						if (letter !== ':') {
 							lastRank = lastRank.substring(1); //returns the string exluding index 0
 							season += letter;
 						} else {
@@ -75,7 +75,7 @@ function Row({ player, rank, rankup, rankdown }) {
 					let div = '';
 					switch (lastRank[0]) {
 						case 'e':
-							div = 'ELITE';
+							div = 'Elite';
 							break;
 						case 'm':
 							div = 'Masters';

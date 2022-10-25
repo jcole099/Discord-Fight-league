@@ -14,7 +14,7 @@ function Rankings() {
 
 	const separateRankings = (players) => {
 		players.forEach((element) => {
-			if (element.division === 'ELITE') {
+			if (element.division === 'Elite') {
 				insertSorted(eliteArr, element);
 			} else if (element.division === 'Masters') {
 				insertSorted(mastersArr, element);
@@ -30,6 +30,8 @@ function Rankings() {
 		});
 	};
 
+	//TODO: Code to handle ties
+	//Insert Players into their division array based on bank value
 	const insertSorted = (array, player) => {
 		let low = 0;
 		let high = array.length;
@@ -42,7 +44,7 @@ function Rankings() {
 		array.splice(low, 0, player); //low - 1?
 	};
 	const getData = async () => {
-		const response = await fetch('http://discordfightleague.com/players'); //returns a promise - fetch is not part of express, fetch is part of browser
+		const response = await fetch('http://discordfightleague.com:59110/players'); //returns a promise - fetch is not part of express, fetch is part of browser
 		const players = await response.json(); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
 		setPlayers(players); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
 		console.log(response);
