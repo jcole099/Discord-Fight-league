@@ -55,7 +55,7 @@ function Row({ player, rank, rankup, rankdown }) {
 			<td className={customClassName}>
 				{(() => {
 					let rankings = player.rankingHistory;
-					//get last element of array
+					//get last season data of array
 					let lastRank = rankings[rankings.length - 1];
 
 					//Get season value"

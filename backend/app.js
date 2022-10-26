@@ -86,17 +86,20 @@ client.login(process.env.TOKEN);
 
 //MIDDLEWARE CONFIG FOR HTTPS
 //use to enable all origins. Instead, we have specified an origin below.
-// app.use(cors());
+//FIXME: FOR DEVELOPMENT ONLY
+app.use(cors());
 
-const corsOptions = {
-	origin: 'https://www.discordfightleague.com',
-	optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-	methods: 'GET',
-};
+//FIXME: FOR PRODUCTION ONLY
+// const corsOptions = {
+// 	origin: 'https://www.discordfightleague.com',
+// 	optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+// 	methods: 'GET',
+// };
 
 //EXPRESS ROUTES
-app.get('/players', cors(corsOptions), async (req, res) => {
-	console.log('route requested');
+// app.get('/players', cors(corsOptions), async (req, res) => { //FIXME: FOR PRODUCTION
+app.get('/players', async (req, res) => {
+	//FIXME: FOR DEVELOPMENT
 	//http://104.168.19.177:59110/players
 	//http://discordfightleague.com:59110/players
 	try {
