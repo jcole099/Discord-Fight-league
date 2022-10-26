@@ -44,7 +44,13 @@ function Rankings() {
 		array.splice(low, 0, player); //low - 1?
 	};
 	const getData = async () => {
-		const response = await fetch('http://discordfightleague.com:59110/players'); //returns a promise - fetch is not part of express, fetch is part of browser
+		//WORKS ON HTTPS
+		//need mode:cors to work on https
+		//This route has an SSL certificate and is reverse proxied from
+		//discordfightleague.com:59110/players
+		const response = await fetch('https://players.discordfightleague.com/', {
+			mode: 'cors',
+		}); //returns a promise - fetch is not part of express, fetch is part of browser
 		const players = await response.json(); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
 		setPlayers(players); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
 		console.log(response);

@@ -1,0 +1,3 @@
+restrict API to GET and from discordfightleague.com
+
+Tie breaker 
