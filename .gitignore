@@ -107,3 +107,5 @@ config.json
 config.env
 .env
 *.env
+
+todo.txt
