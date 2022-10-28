@@ -21,7 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "nodemon server.js",
+    "startreact": "react-scripts start",
     "build": "BUILD_PATH='/var/www/discordfightleague.com' react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
