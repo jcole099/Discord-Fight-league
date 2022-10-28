@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-	AiFillCaretDown,
-	AiFillCaretUp,
-	AiOutlineArrowRight,
-} from 'react-icons/ai';
-import { BsArrowReturnRight } from 'react-icons/bs';
+import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
 
 function Row({ player, rank, rankup, rankdown }) {
 	//LONG NAMES - gets first 15 characters of user name
@@ -60,11 +55,11 @@ function Row({ player, rank, rankup, rankdown }) {
 
 					//Get season value"
 					//iterate until ":"
-					let season = '';
+					// let season = '';
 					for (const letter of lastRank) {
 						if (letter !== ':') {
 							lastRank = lastRank.substring(1); //returns the string exluding index 0
-							season += letter;
+							// season += letter; //not using the season yet
 						} else {
 							lastRank = lastRank.substring(1); //returns the string exluding index 0
 							break;

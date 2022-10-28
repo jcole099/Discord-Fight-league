@@ -4,7 +4,6 @@
 //IMPORTS
 const Players = require('./models/Players');
 const express = require('express');
-const cors = require('cors'); //cors middleware
 const commandController = require('./commandController.js');
 const fs = require('fs');
 const mongoose = require('mongoose');
@@ -84,24 +83,12 @@ mongoose
 
 client.login(process.env.TOKEN);
 
-//MIDDLEWARE CONFIG FOR HTTPS
-//use to enable all origins. Instead, we have specified an origin below.
-//FIXME: FOR DEVELOPMENT ONLY
-app.use(cors());
-
-//FIXME: FOR PRODUCTION ONLY
-// const corsOptions = {
-// 	origin: 'https://www.discordfightleague.com',
-// 	optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-// 	methods: 'GET',
-// };
-
 //EXPRESS ROUTES
-// app.get('/players', cors(corsOptions), async (req, res) => { //FIXME: FOR PRODUCTION
+app.get('/*', function (req, res) {
+	res.status(200).sendFile('/var/www/discordfightleague.com/index.html');
+});
+
 app.get('/players', async (req, res) => {
-	//FIXME: FOR DEVELOPMENT
-	//http://104.168.19.177:59110/players
-	//http://discordfightleague.com:59110/players
 	try {
 		const getPlayersQuery = await Players.find();
 		await res.status(200).json(getPlayersQuery);

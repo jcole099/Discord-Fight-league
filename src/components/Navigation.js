@@ -17,7 +17,7 @@ function Navigation({ clicker }) {
 					<div className="links">
 						<div className="pleaseWork">
 							<Link to="/">
-								<div className="navButton">Rankings</div>
+								<div className="navButton">Rankings_TEST</div>
 							</Link>
 							<Link to="/howtoplay">
 								<div className="navButton">How To Play</div>
