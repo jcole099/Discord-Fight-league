@@ -20,9 +20,9 @@ dotenv.config({ path: './config.env' });
 
 //GLOBAL EXPRESS VARIABLES
 const app = express();
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'build'))); //use this for React
 
 //Global discord variable
 //Intents give the bot specific access to information.
@@ -83,9 +83,10 @@ mongoose
 
 client.login(process.env.TOKEN);
 
+// app.use(cors());
 //EXPRESS ROUTES
-app.get('/*', function (req, res) {
-	res.status(200).sendFile('/var/www/discordfightleague.com/index.html');
+app.get('/', function (req, res) {
+	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.get('/players', async (req, res) => {
