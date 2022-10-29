@@ -62,7 +62,7 @@ client.on('messageCreate', async (message) => {
 client.once('ready', () => {
 	console.log('Discord connection successful!');
 });
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORDTOKEN);
 
 // CONNECT TO MONGODB
 const DB = process.env.DATABASE.replace(
