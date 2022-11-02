@@ -5,7 +5,16 @@ module.exports = {
 	dm: false,
 	args: 0,
 	usage: '',
-	execute(message) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
+		freezeBets.status = false;
 		return message.channel.send('**All bets UN-frozen**');
 	},
 };

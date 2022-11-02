@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "startreact": "react-scripts start",
+    "sr": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

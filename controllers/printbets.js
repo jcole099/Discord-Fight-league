@@ -9,7 +9,15 @@ module.exports = {
 	dm: false,
 	args: 0,
 	usage: '',
-	async execute(message, localData) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		try {
 			let reply = 'Active bets:';
 			//The following if block is created because printbets can get called two ways.
@@ -50,10 +58,10 @@ module.exports = {
 				let totalSpentWeek = 0;
 
 				//add active bet lines
-				if (localData.activeBets.length === 0) {
+				if (args.activeBets.length === 0) {
 					reply += `\n**There are no active bets**`;
 				} else {
-					for (bet of localData.activeBets) {
+					for (bet of args.activeBets) {
 						totalSpentWeek += JSON.parse(bet).amountBet;
 						reply += `\n**${JSON.parse(bet).index}** - **${
 							JSON.parse(bet).fighterName
@@ -66,7 +74,7 @@ module.exports = {
 					remainingToSpendWeek = 1250 - totalSpentWeek;
 				}
 
-				reply += `\n\n*Bank: $${localData.bank}*\n*Primary Bets Remaining: ${localData.primaryBetsRemaining}\nRemaining money required to spend this week: $${remainingToSpendWeek}*`;
+				reply += `\n\n*Bank: $${args.bank}*\n*Primary Bets Remaining: ${args.primaryBetsRemaining}\nRemaining money required to spend this week: $${remainingToSpendWeek}*`;
 				return reply;
 			}
 			message.channel.send(reply);

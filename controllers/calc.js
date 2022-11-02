@@ -5,7 +5,15 @@ module.exports = {
 	dm: false,
 	args: 2,
 	usage: '<bet_amount> <odds>',
-	execute(message, args) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		try {
 			let [bet, odds] = args;
 			if (bet.startsWith('$')) bet = bet.slice(1);

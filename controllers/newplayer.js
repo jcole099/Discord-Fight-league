@@ -6,7 +6,15 @@ module.exports = {
 	dm: false,
 	args: 0,
 	usage: '',
-	async execute(message, myGuild, warRoom) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		try {
 			const newPlayer = {
 				playerName: message.author.username,

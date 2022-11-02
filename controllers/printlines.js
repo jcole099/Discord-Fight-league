@@ -7,7 +7,15 @@ module.exports = {
 	dm: false,
 	args: 0,
 	usage: '',
-	async execute(message, args) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		try {
 			let lines = await Bettinglines.find().sort({ fighterName: 1 }); //get all lines, sort them in order of name, ascending (1)
 			let reply = '';

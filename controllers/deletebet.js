@@ -9,25 +9,30 @@ module.exports = {
 	dm: false,
 	args: 1,
 	usage: '<index_number>',
-	async execute(message, userProvidedIndex) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		try {
 			//get player data
 			const userData = await Players.findOne({ playerID: message.author.id });
 
 			//ARGUMENT VALIDATION
-			let index = userProvidedIndex;
+			let index = args;
 			if (isNaN(index) && index < 1) {
 				return message.channel.send(
 					`You didn't provide appropriate arguments, ${message.author}! Ensure that the index of the bet to be deleted is a **positive number**`
 				);
 			}
-			userProvidedIndex = Math.floor(userProvidedIndex);
+			args = Math.floor(args);
 
 			//check if userIndex is outside scope of actual index
-			if (
-				userData.activeBets.length < Number(userProvidedIndex) ||
-				Number(userProvidedIndex) < 1
-			) {
+			if (userData.activeBets.length < Number(args) || Number(args) < 1) {
 				return message.channel.send(
 					`Index provided is outside the scope of active bets. Please use command **!printbets** to view active bets, ${message.author}`
 				);
@@ -36,7 +41,7 @@ module.exports = {
 			//delete bet locally
 			userData.activeBets.every((el, loopIndex) => {
 				//every is same as forEach, using every to break out of loop
-				if (JSON.parse(el).index === Number(userProvidedIndex)) {
+				if (JSON.parse(el).index === Number(args)) {
 					userData.bank += JSON.parse(el).amountBet; //add bank back
 					userData.activeBets.splice(loopIndex, 1);
 					return false;

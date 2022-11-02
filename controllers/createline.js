@@ -1,6 +1,8 @@
 const Bettinglines = require('../models/Bettinglines');
 const sortLinesHelper = require('../helpers/sortLinesHelper');
 
+//Must capitalize first letter of first name in order to be sorted.
+
 module.exports = {
 	name: 'createline',
 	description: 'Creates a betting line',
@@ -9,7 +11,15 @@ module.exports = {
 	args: 6,
 	usage:
 		'<fighter_firstname> <fighter_lastname> <fighter_odds> <opponent_firstname> <opponent_lastname> <opponent_odds>',
-	async execute(message, args) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		//VALIDATION
 		if (isNaN(args[2]) || isNaN(args[5])) {
 			return message.channel.send(

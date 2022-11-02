@@ -8,7 +8,15 @@ module.exports = {
 	dm: false,
 	args: 0,
 	usage: '',
-	async execute(message, args) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		try {
 			//get player data
 			const userData = await Players.findOne({ playerID: message.author.id });

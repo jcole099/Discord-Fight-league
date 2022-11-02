@@ -5,7 +5,15 @@ module.exports = {
 	dm: false,
 	args: 0,
 	usage: '',
-	async execute(message, commands, myGuild) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		try {
 			let reply = ``;
 

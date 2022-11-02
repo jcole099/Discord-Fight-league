@@ -26,10 +26,14 @@ module.exports = async (message, client, freezeBets) => {
 	//load command data into var 'command'
 	const command = client.commands.get(commandName);
 
-	//Ignore all commands if user doesn't have the player role, UNLESS it is an admin command
+	//GLOBAL VARIABLES TODO:
 	const myGuild = await client.guilds.cache.get(
 		`${process.env.DISCORD_GUILDID}`
 	); //get server information
+	warRoom = client.channels.cache.get(`${process.env.DISCORD_WARROOMID}`);
+	adminRoom = client.channels.cache.get(`${process.env.DISCORD_ADMINROOMID}`);
+
+	//Ignore all commands if user doesn't have the player role, UNLESS it is an admin command
 	const someGuy = await myGuild.members.fetch(message.author.id);
 	if (
 		!someGuy._roles.includes(`${process.env.DISCORD_PLAYERROLEID}`) &&
@@ -82,23 +86,15 @@ module.exports = async (message, client, freezeBets) => {
 
 	//EXECUTING COMMANDS
 	try {
-		//TODO: Check for freezebets status
-
-		//Check commands for special arguments that need to be passed
-		if (command.name === 'newplayer') {
-			warRoom = client.channels.cache.get(`${process.env.DISCORD_WARROOMID}`);
-			command.execute(message, myGuild, warRoom);
-		} else if (command.name === 'help') {
-			command.execute(message, client.commands, myGuild);
-		} else if (command.name === 'freezebets') {
-			freezeBets.status = true;
-			command.execute(message);
-		} else if (command.name === 'unfreezebets') {
-			freezeBets.status = false;
-			command.execute(message);
-		} else {
-			command.execute(message, args);
-		}
+		command.execute(
+			message,
+			args,
+			freezeBets,
+			client.commands,
+			myGuild,
+			warRoom,
+			adminRoom
+		);
 	} catch (error) {
 		console.error(error);
 		message.reply(

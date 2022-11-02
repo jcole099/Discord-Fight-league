@@ -5,7 +5,15 @@ module.exports = {
 	dm: false,
 	args: 0,
 	usage: '',
-	execute(message, args) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		message.channel.bulkDelete(100);
 	},
 };

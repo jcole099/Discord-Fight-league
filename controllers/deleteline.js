@@ -8,7 +8,15 @@ module.exports = {
 	dm: false,
 	args: 1,
 	usage: '<index_number>',
-	async execute(message, args) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		//VALIDATION
 		if (isNaN(args[0])) {
 			return message.channel.send(

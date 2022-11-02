@@ -10,7 +10,15 @@ module.exports = {
 	dm: false,
 	args: 2,
 	usage: '<bet_amount> <index_number>',
-	async execute(message, args) {
+	async execute(
+		message,
+		args,
+		freezeBets,
+		commands,
+		myGuild,
+		warRoom,
+		adminRoom
+	) {
 		try {
 			//ARGUMENT VALIDATION
 			let [bet, index] = args;
