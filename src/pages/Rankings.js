@@ -56,10 +56,15 @@ function Rankings() {
 		array.splice(low, 0, player); //places ties unordered consecutively.
 	};
 	const getData = async () => {
-		const response = await fetch('/players'); //returns a promise - fetch is not part of express, fetch is part of browser
-		const players = await response.json(); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
-		setPlayers(players); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
-		console.log(response);
+		try {
+			const response = await fetch('/players'); //returns a promise - fetch is not part of express, fetch is part of browser
+			const players = await response.json(); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
+			console.log(`PLAYERS: ${players}`);
+			setPlayers(players); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
+			console.log(response);
+		} catch (error) {
+			console.log(error);
+		}
 	};
 
 	useEffect(() => {
