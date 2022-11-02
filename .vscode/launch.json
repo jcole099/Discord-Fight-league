@@ -10,31 +10,22 @@
             "reAttach": true,
             "name": "Launch Firefox against localhost",
             "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}/public/",
+            "webRoot": "${workspaceFolder}/frontend/src",
+            "skipFiles": [
+                "**/node_modules/**"
+            ],
             "pathMappings": [
                 {
-                    "url": "http://localhost:3000/root/dfl/frontend/src",
-                    "path": "${workspaceFolder}/src"
+                    "url": "file:///C:/Users/James/Coding/dfl/frontend/src",
+                    "path": "${workspaceFolder}/frontend/src"
                 },
                 {
-                    "url": "http://localhost:3000/root/dfl/frontend/src",
-                    "path": "${workspaceFolder}/src"
+                    "url": "file:///C:/Users/James/Coding/dfl/frontend/src",
+                    "path": "${workspaceFolder}/frontend/src"
                 },
                 {
-                    "url": "http://localhost:3000/root/dfl/frontend/src",
-                    "path": "${workspaceFolder}/src"
-                },
-                {
-                    "url": "http://localhost:3000/root/dfl/frontend/src",
-                    "path": "${workspaceFolder}/src"
-                },
-                {
-                    "url": "http://localhost:3000/root/dfl/frontend/src",
-                    "path": "${workspaceFolder}/src"
-                },
-                {
-                    "url": "http://localhost:3000",
-                    "path": "${workspaceFolder}/src"
+                    "url": "file:///C:/Users/James/Coding/dfl/frontend/src",
+                    "path": "${workspaceFolder}/frontend/src"
                 }
             ]
         }

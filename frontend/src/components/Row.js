@@ -22,6 +22,47 @@ function Row({ player, rank, rankup, rankdown }) {
 		customClassName = 'playerRow';
 	}
 
+	//LAST SEASON RANK CODE
+	let rankings = player.rankingHistory;
+	//get last season data of array
+	let lastRank = rankings[rankings.length - 1];
+
+	//Get season value"
+	//iterate until ":"
+	// let season = '';
+	for (let letter of lastRank) {
+		if (letter !== ':') {
+			lastRank = lastRank.substring(1); //returns the string exluding index 0
+			// season += letter; //not using the season yet
+		} else {
+			lastRank = lastRank.substring(1); //returns the string exluding index 0
+			break;
+		}
+	}
+	// detect first letter -> m = "Masters", r = "Ruby", etc...
+	// Display: "Place:"
+	let div = '';
+	switch (lastRank[0]) {
+		case 'e':
+			div = 'Elite';
+			break;
+		case 'm':
+			div = 'Masters';
+			break;
+		case 'd':
+			div = 'Diamond';
+			break;
+		case 'g':
+			div = 'Gold';
+			break;
+		case 's':
+			div = 'Silver';
+			break;
+		case 'b':
+			div = 'Bronze';
+	}
+	lastRank = lastRank.substring(1); //lastRank now includes the ranking within the division
+
 	return (
 		<tr className="row">
 			<td className={customClassName}>{rank}</td>
@@ -48,53 +89,9 @@ function Row({ player, rank, rankup, rankdown }) {
 				})()}
 			</td>
 			<td className={customClassName}>
-				{(() => {
-					let rankings = player.rankingHistory;
-					//get last season data of array
-					let lastRank = rankings[rankings.length - 1];
-
-					//Get season value"
-					//iterate until ":"
-					// let season = '';
-					for (const letter of lastRank) {
-						if (letter !== ':') {
-							lastRank = lastRank.substring(1); //returns the string exluding index 0
-							// season += letter; //not using the season yet
-						} else {
-							lastRank = lastRank.substring(1); //returns the string exluding index 0
-							break;
-						}
-					}
-					//detect first letter -> m = "Masters", r = "Ruby", etc...
-					//Display: "Place:"
-					let div = '';
-					switch (lastRank[0]) {
-						case 'e':
-							div = 'Elite';
-							break;
-						case 'm':
-							div = 'Masters';
-							break;
-						case 'd':
-							div = 'Diamond';
-							break;
-						case 'g':
-							div = 'Gold';
-							break;
-						case 's':
-							div = 'Silver';
-							break;
-						case 'b':
-							div = 'Bronze';
-					}
-					lastRank = lastRank.substring(1); //lastRank now includes the ranking within the division
-
-					return (
-						<span>
-							{div}: {lastRank}
-						</span>
-					);
-				})()}
+				<span>
+					{div}: {lastRank}
+				</span>
 			</td>
 		</tr>
 	);
