@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'build'))); //use this for React
 
-//Global discord variable
+//GLOBAL DISCORD VARIABLE
 //Intents give the bot specific access to information.
 const client = new Client({
 	intents: [
@@ -36,6 +36,9 @@ const client = new Client({
 	],
 	partials: [Partials.Message, Partials.Channel],
 });
+
+//GLOBAL SERVER VARIABLES
+let freezeBets = { status: false }; //declaring as object to pass by reference into commandController
 
 //SETTING UP COMMAND LIBRARY
 client.commands = new Collection();
@@ -55,7 +58,7 @@ for (const file of commandFiles) {
 
 //HANDLING COMMANDS
 client.on('messageCreate', async (message) => {
-	await commandController(message, client);
+	await commandController(message, client, freezeBets);
 });
 
 // CONNECT TO DISCORD
@@ -83,7 +86,6 @@ mongoose
 
 client.login(process.env.TOKEN);
 
-// app.use(cors());
 //EXPRESS ROUTES
 app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));
@@ -92,7 +94,7 @@ app.get('/', function (req, res) {
 app.get('/players', async (req, res) => {
 	try {
 		const getPlayersQuery = await Players.find();
-		await res.status(200).json(getPlayersQuery);
+		res.status(200).json(getPlayersQuery);
 	} catch (error) {
 		console.error(error);
 		res.status(500).json({ Error: 'Request Failed' });

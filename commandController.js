@@ -1,7 +1,7 @@
 //message.channel.type: 1 for dm
 //message.channel.type: 0 for chat
 
-module.exports = async (message, client) => {
+module.exports = async (message, client, freezeBets) => {
 	//ignore messages that don't start with command prefix or messages from the bot
 	if (!message.content.startsWith(process.env.PREFIX) || message.author.bot)
 		return;
@@ -27,10 +27,12 @@ module.exports = async (message, client) => {
 	const command = client.commands.get(commandName);
 
 	//Ignore all commands if user doesn't have the player role, UNLESS it is an admin command
-	const myGuild = await client.guilds.cache.get('789531340084215888'); //get server information
+	const myGuild = await client.guilds.cache.get(
+		`${process.env.DISCORD_GUILDID}`
+	); //get server information
 	const someGuy = await myGuild.members.fetch(message.author.id);
 	if (
-		!someGuy._roles.includes('823970510853242920') &&
+		!someGuy._roles.includes(`${process.env.DISCORD_PLAYERROLEID}`) &&
 		command.name !== 'newplayer' &&
 		command.restriction === ''
 	) {
@@ -62,19 +64,45 @@ module.exports = async (message, client) => {
 		);
 	}
 
+	//CHECK FOR FROZEN RESTRICTIONS
+	if (
+		freezeBets.status &&
+		(command.name === 'bet' ||
+			command.name === 'deleteallbets' ||
+			command.name === 'deletebet')
+	) {
+		//sends a DM to user: TODO: Send DM to user instead of channel. (production)
+		// return message.author.send(
+		// 	`All bets are frozen. Cannot add or delete bets until the fight card has ended, ${message.author}`
+		// );
+		return message.channel.send(
+			`All bets are frozen. Cannot add or delete bets until the fight card has ended, ${message.author}`
+		);
+	}
+
 	//EXECUTING COMMANDS
 	try {
 		//TODO: Check for freezebets status
 
 		//Check commands for special arguments that need to be passed
 		if (command.name === 'newplayer') {
-			warRoom = client.channels.cache.get('1030443410034790492');
+			warRoom = client.channels.cache.get(`${process.env.DISCORD_WARROOMID}`);
 			command.execute(message, myGuild, warRoom);
+		} else if (command.name === 'help') {
+			command.execute(message, client.commands, myGuild);
+		} else if (command.name === 'freezebets') {
+			freezeBets.status = true;
+			command.execute(message);
+		} else if (command.name === 'unfreezebets') {
+			freezeBets.status = false;
+			command.execute(message);
 		} else {
 			command.execute(message, args);
 		}
 	} catch (error) {
 		console.error(error);
-		message.reply('There was an error trying to execute that command!');
+		message.reply(
+			'There was a command controller error while attempting to execute that command. Please contact and Admin.'
+		);
 	}
 };
