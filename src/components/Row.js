@@ -53,6 +53,10 @@ function Row({ player, rank, rankup, rankdown }) {
 					//get last season data of array
 					let lastRank = rankings[rankings.length - 1];
 
+					if (lastRank === 'new') {
+						return <span>new</span>;
+					}
+
 					//Get season value"
 					//iterate until ":"
 					// let season = '';

@@ -34,6 +34,7 @@ const playersSchema = new mongoose.Schema({
 	},
 	rankingHistory: {
 		type: [String],
+		default: ['new'],
 	},
 	primaryBetsRemaining: {
 		type: Number,
