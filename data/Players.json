@@ -1,0 +1,983 @@
+[{
+  "playerName": "Happy",
+  "playerID": "260648339320733696",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 1250,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:g5"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "jackelope",
+  "playerID": "260648339320733102",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 1225,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 5,
+  "rankingHistory": [
+    "3:g3",
+    "4:d7"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Pepper",
+  "playerID": "260648339320733103",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 1225,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": -4,
+  "rankingHistory": [
+    "3:g3",
+    "4:g2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Sopaz",
+  "playerID": "260648339320733104",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 1225,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 0,
+  "rankingHistory": [
+    "3:g3",
+    "4:m4"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Jackie",
+  "playerID": "260648339320733105",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 1050,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 5,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Steve",
+  "playerID": "260648339320733106",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 903,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": -4,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Corey",
+  "playerID": "260648339320733107",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 857,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 0,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Stacey",
+  "playerID": "260648339320733108",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 750,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 0,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Carl",
+  "playerID": "260648339320733109",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 600,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 3,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Frankle",
+  "playerID": "260648339320733110",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 501,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": -2,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Alfred",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 1209,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": -9,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Hitchock",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 1159,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": -1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Sam",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 938,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": -2,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Bamf",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 701,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 4,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Kyle",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 19,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": -2,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Mike",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 582,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 6,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Adam",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 522,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Jason",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 111,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": -10,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Myers",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 716,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 2,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Andrew",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 989,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 0,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Rantay",
+  "playerID": "260648339320733202",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 1201,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": -4,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Sake",
+  "playerID": "260648339320733203",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 1109,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 5,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Striker",
+  "playerID": "260648339320733204",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 1005,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Felipe",
+  "playerID": "260648339320733205",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 900,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Brian",
+  "playerID": "260648339320733206",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 850,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Ace",
+  "playerID": "260648339320733207",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 704,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Ryan",
+  "playerID": "260648339320733208",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 650,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Joe",
+  "playerID": "260648339320733209",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 329,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Ari",
+  "playerID": "260648339320733210",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 146,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Mark",
+  "playerID": "260648339320733301",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 1250,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Shane",
+  "playerID": "260648339320733302",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 1200,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Tom",
+  "playerID": "260648339320733303",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 1109,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Bert",
+  "playerID": "260648339320733304",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 1049,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Christina",
+  "playerID": "260648339320733305",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 951,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Bob",
+  "playerID": "260648339320733306",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 703,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Tim",
+  "playerID": "260648339320733307",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 650,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Sarah",
+  "playerID": "260648339320733308",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 550,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "David",
+  "playerID": "260648339320733309",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 423,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "James",
+  "playerID": "260648339320733310",
+  "playerStrike": false,
+  "division": "Diamond",
+  "bank": 58,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Bill",
+  "playerID": "260648339320733401",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 1152,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Levi",
+  "playerID": "260648339320733402",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 1090,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Jess",
+  "playerID": "260648339320733403",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 900,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Tracy",
+  "playerID": "260648339320733404",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 802,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Gordan",
+  "playerID": "260648339320733405",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 600,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Taulk",
+  "playerID": "260648339320733406",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 250,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Costas",
+  "playerID": "260648339320733407",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 200,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Canary",
+  "playerID": "260648339320733408",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 150,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Tladum",
+  "playerID": "260648339320733409",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 102,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Krechev",
+  "playerID": "260648339320733410",
+  "playerStrike": false,
+  "division": "Gold",
+  "bank": 0,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Anderson",
+  "playerID": "260648339320733501",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 1009,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Jessica",
+  "playerID": "260648339320733502",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 905,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Turner",
+  "playerID": "260648339320733503",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 857,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Elizabeth",
+  "playerID": "260648339320733504",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 788,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Orange",
+  "playerID": "260648339320733505",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 600,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Hunter",
+  "playerID": "260648339320733506",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 450,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Mercedes",
+  "playerID": "260648339320733507",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 325,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Sophia",
+  "playerID": "260648339320733508",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 245,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "George",
+  "playerID": "260648339320733509",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 150,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Alexander",
+  "playerID": "260648339320733510",
+  "playerStrike": false,
+  "division": "Silver",
+  "bank": 23,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Eddie",
+  "playerID": "260648339320733601",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 754,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Brandon",
+  "playerID": "260648339320733602",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 550,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Broseph",
+  "playerID": "260648339320733603",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 498,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Comrad",
+  "playerID": "260648339320733604",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 410,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Tactical",
+  "playerID": "260648339320733605",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 404,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Khabib",
+  "playerID": "260648339320733606",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 257,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Stephanie",
+  "playerID": "260648339320733607",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 199,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "John",
+  "playerID": "260648339320733608",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 150,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Alisha",
+  "playerID": "260648339320733609",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 95,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "Janis",
+  "playerID": "260648339320733610",
+  "playerStrike": false,
+  "division": "Bronze",
+  "bank": 21,
+  "activeBets": [],
+  "previousBets": [],
+  "movement": 1,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3
+},{
+  "playerName": "dmc_run",
+  "playerID": 260648339320730000,
+  "division": "Bronze",
+  "bank": 550,
+  "movement": 0,
+  "activeBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":200,\"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":500,\"index\":2}"
+  ],
+  "previousBets": [],
+  "rankingHistory": [
+    "new"
+  ],
+  "primaryBetsRemaining": 2,
+  "__v": 0
+}]

@@ -22,6 +22,10 @@ const playersSchema = new mongoose.Schema({
 		type: Number,
 		default: 1250,
 	},
+	startingBank: {
+		type: Number,
+		default: 1250,
+	},
 	movement: {
 		type: Number,
 		default: 0,

@@ -26,7 +26,7 @@ function Row({ player, rank, rankup, rankdown }) {
 		<tr className="row">
 			<td className={customClassName}>{rank}</td>
 			<td className={customClassName}>{checkNameLength(player.playerName)}</td>
-			<td className={customClassName}>{player.bank}</td>
+			<td className={customClassName}>{player.startingBank}</td>
 			<td className={customClassName}>
 				{(() => {
 					if (player.movement >= 0) {

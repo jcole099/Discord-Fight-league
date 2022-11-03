@@ -44,7 +44,7 @@ function Rankings() {
 		//Sorting
 		while (low < high) {
 			let mid = (low + high) >>> 1; //floor(divide by 2)
-			if (array[mid].bank > player.bank) {
+			if (array[mid].startingBank > player.startingBank) {
 				low = mid + 1;
 			} else {
 				high = mid;
