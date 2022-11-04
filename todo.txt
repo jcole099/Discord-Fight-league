@@ -1,10 +1,4 @@
-Create a 'season' variable to be used for saving old bet data
-Create a 'week' variable to be used for saving old bet data
-
-Figure out what format to save prevBets data
-Divide by season:week
-
-further divide by winning/losing bets
+**Check to see if player is already in the league before !newplayer command
 
 
 
