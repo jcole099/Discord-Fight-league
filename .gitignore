@@ -108,4 +108,5 @@ config.env
 .env
 *.env
 
-todo.txt
+
+.gitignore
