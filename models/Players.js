@@ -44,6 +44,10 @@ const playersSchema = new mongoose.Schema({
 		type: Number,
 		default: 3,
 	},
+	isHuman: {
+		type: Boolean,
+		default: true,
+	},
 });
 
 const Players = mongoose.model('Players', playersSchema);

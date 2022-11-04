@@ -1,5 +1,10 @@
 import React from 'react';
-import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
+import {
+	AiFillCaretDown,
+	AiFillCaretUp,
+	AiFillCaretRight,
+} from 'react-icons/ai';
+// import { IoReorderTwoOutline } from 'react-icons/io';
 
 function Row({ player, rank, rankup, rankdown }) {
 	//LONG NAMES - gets first 15 characters of user name
@@ -29,7 +34,7 @@ function Row({ player, rank, rankup, rankdown }) {
 			<td className={customClassName}>{player.startingBank}</td>
 			<td className={customClassName}>
 				{(() => {
-					if (player.movement >= 0) {
+					if (player.movement > 0) {
 						return (
 							<>
 								<AiFillCaretUp className="upIcon" /> {player.movement}
@@ -42,8 +47,14 @@ function Row({ player, rank, rankup, rankdown }) {
 								{Math.abs(player.movement)}
 							</>
 						);
+					} else if (player.movement === 0) {
+						return (
+							<>
+								<AiFillCaretRight className="equalIcon" /> {player.movement}
+							</>
+						);
 					} else {
-						return 0;
+						return 'Hi';
 					}
 				})()}
 			</td>

@@ -1,8 +1,8 @@
 const Players = require('../models/Players');
 
 module.exports = {
-	name: 'buildRandomStartingBank',
-	description: 'Assigns random startingBanks to the entire league',
+	name: 'buildattribute',
+	description: 'DEVELOPMENT: used to build an attribute to the database',
 	restriction: '',
 	dm: false,
 	args: 0,
@@ -19,11 +19,14 @@ module.exports = {
 		try {
 			let userData = await Players.find({});
 			for (let player of userData) {
-				player.startingBank = Math.floor(Math.random() * 3000) + 1250;
+				let multiplier = 1;
+				let randNegative = Math.random();
+				randNegative < 0.5 ? (multiplier = -1) : (multiplier = 1);
+				player.movement = Math.floor(Math.random() * 10) * multiplier;
 				await player.save(); //updates a player document https://mongoosejs.com/docs/documents.html
 			}
 
-			return message.channel.send('Build completed');
+			return message.channel.send('Build attribute complete');
 		} catch (err) {
 			console.log(err);
 			return await message.channel.send(
@@ -32,10 +35,3 @@ module.exports = {
 		}
 	},
 };
-
-//TESTING UPDATE ON ONE PLAYER
-// let userData = await Players.findOne({ playerName: 'dmc_run' });
-// userData.startingBank = Math.floor(Math.random() * 3000) + 1250;
-// userData.__v = 0;
-// console.log(userData);
-// await Players.updateOne({ playerName: 'dmc_run' }, userData);
