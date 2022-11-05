@@ -11,6 +11,10 @@
             "name": "Launch Firefox against localhost",
             "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}/public/",
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "${workspaceFolder}/node_modules/",
+            ],
             "pathMappings": [
                 {
                     "url": "http://localhost:3000/root/dfl/frontend/src",

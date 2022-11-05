@@ -1,4 +1,4 @@
-//THIS COMMAND CAN BE MODIFIED IN THE FUTURE TO ACCOMODATE BOTS
+//THIS COMMAND CAN BE MODIFIED IN THE FUTURE TO ACCOMODATE BOTS\
 
 const Players = require('../models/Players');
 const Bettinglines = require('../models/Bettinglines');

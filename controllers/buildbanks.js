@@ -20,9 +20,11 @@ module.exports = {
 		try {
 			let userData = await Players.find({});
 			for (let player of userData) {
-				player.startingBank = Math.floor(Math.random() * 3000) + 1250;
-				player.bank = player.startingBank;
-				await player.save(); //updates a player document https://mongoosejs.com/docs/documents.html
+				if (!player.isHuman) {
+					player.startingBank = Math.floor(Math.random() * 3000) + 1250;
+					player.bank = player.startingBank;
+					await player.save(); //updates a player document https://mongoosejs.com/docs/documents.html
+				}
 			}
 
 			return message.channel.send('New random banks assigned to league');

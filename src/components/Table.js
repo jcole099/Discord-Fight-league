@@ -9,15 +9,19 @@ function Table({ players, specialTier }) {
 	let rankDownNum = players.length - rankUpNum;
 	rankUpNum -= 1;
 
+	//'specialTier' is a variable created in Rankings.js with arbitrary values to distinguish elite, masters, bronze divisions which have special rules for the promotion/demotion lines
 	//elite tier doesnt use percentages, therefore hardcode location.
 	if (specialTier === 1) {
 		rankUpNum = -1;
 		rankDownNum = 7;
 	}
-
 	//masters tier hardcodes top white line
 	if (specialTier === 2) {
 		rankUpNum = 2;
+	}
+	//Bronze division does not have a deranking line
+	if (specialTier === 3) {
+		rankDownNum = -1;
 	}
 
 	return (
@@ -26,7 +30,7 @@ function Table({ players, specialTier }) {
 				<tr>
 					<th>Rank</th>
 					<th>Discord Name</th>
-					<th>Bank</th>
+					<th>Starting Bank</th>
 					<th>Movement</th>
 					<th>Last Season Rank</th>
 				</tr>

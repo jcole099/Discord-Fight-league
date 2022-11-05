@@ -17,7 +17,7 @@ module.exports = {
 		adminRoom
 	) {
 		try {
-			const userData = await Players.findOne({ playerID: message.author.id });
+			const userData = await Players.find({ playerID: message.author.id });
 
 			let totalSpentWeek = 0;
 			for (bet of userData.activeBets) {

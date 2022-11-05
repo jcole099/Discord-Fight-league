@@ -48,6 +48,10 @@ const playersSchema = new mongoose.Schema({
 		type: Boolean,
 		default: true,
 	},
+	rank: {
+		type: Number,
+		default: 0,
+	},
 });
 
 const Players = mongoose.model('Players', playersSchema);

@@ -16,13 +16,24 @@ module.exports = {
 		adminRoom
 	) {
 		try {
+			//VALIDATION
+			let userData = await Players.find({ playerID: message.author.id });
+			if (userData.length > 0) {
+				return message.author.send('You are already an active player!');
+			}
+
+			//GET RANK VALUE (bottom of bronze division)
+			let bronzePlayerCount = await Players.find({ division: 'Bronze' });
+
 			const newPlayer = {
 				playerName: message.author.username,
 				playerID: message.author.id,
+				rank: bronzePlayerCount.length + 1,
 			};
 
 			//assigns 'Players' role.
 			if (message.channel.type == 1) {
+				//DM
 				const bronzeDivision = await myGuild.roles.cache.find(
 					(role) => role.name === 'Bronze'
 				);
@@ -34,6 +45,7 @@ module.exports = {
 				await newGuy.roles.add(playersRole);
 				await newGuy.roles.add(bronzeDivision);
 			} else {
+				//CHANNEL
 				const bronzeDivision = await message.guild.roles.cache.find(
 					(role) => role.name === 'Bronze'
 				);

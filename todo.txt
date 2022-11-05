@@ -1,10 +1,26 @@
-**Check to see if player is already in the league before !newplayer command
+fetch data from App.js -> pass to rankings
+Make React use player.rank value for displaying
 
 
 
 
 
 
+
+
+
+
+~~~~~~~~~~~~~Restructure Event
+
+
+
+~~~~~~~~~~~~~Restructure Season
+New season rankings based off of last season rank
 
 ~~~~~~~~~~~~ Later
 Send DMs to players who try to use commands in regular chat or aren't active players
+
+~~~~~~~~~~Future bot implementation
+Add attribute "isSmart" to Players model
+Smart bots only pick favorited fighters
+Command: count total players & count human players

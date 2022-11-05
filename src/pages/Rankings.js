@@ -3,16 +3,42 @@ import Table from '../components/Table.js';
 import { useState, useEffect } from 'react';
 
 function Rankings() {
-	const eliteArr = [];
-	const mastersArr = [];
-	const diamondArr = [];
-	const goldArr = [];
-	const silverArr = [];
-	const bronzeArr = [];
+	let eliteArr = [];
+	let mastersArr = [];
+	let diamondArr = [];
+	let goldArr = [];
+	let silverArr = [];
+	let bronzeArr = [];
 
 	const [players, setPlayers] = useState([1]);
 
-	//Splits the players into different divisions
+	// const divideAndSort = (players) => {
+	// 	players.forEach((element) => {
+	// 		//find out what array they go into
+	// 		let curArr = [];
+	// 		if (element.division === 'Elite') {
+	// 			curArr = eliteArr;
+	// 		} else if (element.division === 'Masters') {
+	// 			curArr = mastersArr;
+	// 		} else if (element.division === 'Diamond') {
+	// 			curArr = diamondArr;
+	// 		} else if (element.division === 'Gold') {
+	// 			curArr = goldArr;
+	// 		} else if (element.division === 'Silver') {
+	// 			curArr = silverArr;
+	// 		} else if (element.division === 'Bronze') {
+	// 			curArr = bronzeArr;
+	// 		}
+	// 		//expand array length to accomodate rank position
+	// 		while (curArr.length < element.rank) {
+	// 			curArr.push(0);
+	// 		}
+	// 		//place element into rank -1 position of array
+	// 		curArr.splice(element.rank - 1, 1, element);
+	// 	});
+	// };
+
+	// Splits the players into different divisions
 	const separateRankings = (players) => {
 		players.forEach((element) => {
 			if (element.division === 'Elite') {
@@ -31,10 +57,6 @@ function Rankings() {
 		});
 	};
 
-	//TODO: INSERTSORTED() WILL BE REPLACED BY RESTRUCTURE LEAGUE COMMAND VIA RIBAS
-	//THIS IS TEMPORARY CODE TO DISPLAY RANKINGS IN RELATIVE ORDER
-	//AN ELEMENT 'RANK_WITHIN_DIVISION' WILL NEED TO BE ADDED TO PLAYERS MODEL
-	//RIBAS !NEWPLAYER COMMAND WILL NEED TO INITIALIZE ^^ TO SOME NUMBER TO BE DETERMINED
 	//Insert Players into their division array based on bank value
 	const insertSorted = (array, player) => {
 		//index values
@@ -55,13 +77,14 @@ function Rankings() {
 
 		array.splice(low, 0, player); //places ties unordered consecutively.
 	};
+
 	const getData = async () => {
 		try {
 			const response = await fetch('/players'); //returns a promise - fetch is not part of express, fetch is part of browser
 			const players = await response.json(); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
-			console.log(`PLAYERS: ${players}`);
 			setPlayers(players); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
-			console.log(response);
+			console.log('TESTINGGGGGGGG');
+			console.log(players);
 		} catch (error) {
 			console.log(error);
 		}
@@ -73,6 +96,9 @@ function Rankings() {
 
 	//Divides players into their divisions, orders them based on bank
 	separateRankings(players);
+
+	//Divides players into their divisions, orders them based on rank
+	// divideAndSort(players);
 
 	return (
 		<article className="rankingsPage">
@@ -129,7 +155,7 @@ function Rankings() {
 						<b>Bronze</b> Division
 					</p>
 				</div>
-				<Table players={bronzeArr} specialTier={0} />
+				<Table players={bronzeArr} specialTier={3} />
 			</div>
 		</article>
 	);
