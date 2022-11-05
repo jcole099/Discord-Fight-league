@@ -12,35 +12,10 @@ function Rankings() {
 
 	const [players, setPlayers] = useState([1]);
 
-	// const divideAndSort = (players) => {
-	// 	players.forEach((element) => {
-	// 		//find out what array they go into
-	// 		let curArr = [];
-	// 		if (element.division === 'Elite') {
-	// 			curArr = eliteArr;
-	// 		} else if (element.division === 'Masters') {
-	// 			curArr = mastersArr;
-	// 		} else if (element.division === 'Diamond') {
-	// 			curArr = diamondArr;
-	// 		} else if (element.division === 'Gold') {
-	// 			curArr = goldArr;
-	// 		} else if (element.division === 'Silver') {
-	// 			curArr = silverArr;
-	// 		} else if (element.division === 'Bronze') {
-	// 			curArr = bronzeArr;
-	// 		}
-	// 		//expand array length to accomodate rank position
-	// 		while (curArr.length < element.rank) {
-	// 			curArr.push(0);
-	// 		}
-	// 		//place element into rank -1 position of array
-	// 		curArr.splice(element.rank - 1, 1, element);
-	// 	});
-	// };
-
-	// Splits the players into different divisions
-	const separateRankings = (players) => {
+	const divideAndSort = (players) => {
 		players.forEach((element) => {
+			//find out what array they go into
+			// let curArr = [];
 			if (element.division === 'Elite') {
 				insertSorted(eliteArr, element);
 			} else if (element.division === 'Masters') {
@@ -57,34 +32,43 @@ function Rankings() {
 		});
 	};
 
-	//Insert Players into their division array based on bank value
+	//TODO: not sure why the first function does not work, but the second does
 	const insertSorted = (array, player) => {
-		//index values
-		let low = 0;
-		let high = array.length;
-
-		//Sorting
-		while (low < high) {
-			let mid = (low + high) >>> 1; //floor(divide by 2)
-			if (array[mid].startingBank > player.startingBank) {
-				low = mid + 1;
-			} else {
-				high = mid;
-			}
+		//expand array length to accomodate rank position
+		while (array.length < player.rank) {
+			array.push(player); //THIS ERRORS WHEN A BLANK PLACEHOLDER IS USED. NOT SURE WHY INSERTING A DUMMY PLAYER VALUE FIXES IT???
 		}
-		//if equal, low is the index of the tie
-		//splice inserts cur it at the tie location and pushes everything down the array
-
-		array.splice(low, 0, player); //places ties unordered consecutively.
+		//place player into rank -1 position of array
+		// array.splice(player.rank - 1, 1, player);
+		array[player.rank - 1] = player;
 	};
+
+	//Insert Players into their division array based on bank value
+	// const insertSorted = (array, player) => {
+	// 	//index values
+	// 	let low = 0;
+	// 	let high = array.length;
+
+	// 	//Sorting
+	// 	while (low < high) {
+	// 		let mid = (low + high) >>> 1; //floor(divide by 2)
+	// 		if (array[mid].rank > player.rank) {
+	// 			low = mid + 1;
+	// 		} else {
+	// 			high = mid;
+	// 		}
+	// 	}
+	// 	//if equal, low is the index of the tie
+	// 	//splice inserts cur it at the tie location and pushes everything down the array
+
+	// 	array.splice(low, 0, player); //places ties unordered consecutively.
+	// };
 
 	const getData = async () => {
 		try {
 			const response = await fetch('/players'); //returns a promise - fetch is not part of express, fetch is part of browser
 			const players = await response.json(); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
 			setPlayers(players); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
-			console.log('TESTINGGGGGGGG');
-			console.log(players);
 		} catch (error) {
 			console.log(error);
 		}
@@ -94,11 +78,8 @@ function Rankings() {
 		getData();
 	}, []); //empty array = call only when the component is first mounted
 
-	//Divides players into their divisions, orders them based on bank
-	separateRankings(players);
-
 	//Divides players into their divisions, orders them based on rank
-	// divideAndSort(players);
+	divideAndSort(players);
 
 	return (
 		<article className="rankingsPage">
