@@ -1,5 +1,4 @@
-fetch data from App.js -> pass to rankings
-Make React use player.rank value for displaying
+implement build rank commands in move player
 
 
 

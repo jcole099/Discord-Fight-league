@@ -3,7 +3,7 @@ import './App.css';
 //Import Dependencies
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 //Import components
 import Navigation from './components/Navigation.js';
@@ -13,11 +13,25 @@ import Rankings from './pages/Rankings.js';
 
 function App() {
 	const year = new Date().getFullYear();
-
+	const [players, setPlayers] = useState([1]);
 	const [isActive, setActive] = useState(false);
 	const toggleClass = () => {
 		setActive(!isActive);
 	};
+
+	const getData = async () => {
+		try {
+			const response = await fetch('/players'); //returns a promise - fetch is not part of express, fetch is part of browser
+			const players = await response.json(); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
+			setPlayers(players); //MUST BE THE NAME OF THE SETSTATE VARIABLE!!!
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
+	useEffect(() => {
+		getData();
+	}, []); //empty array = call only when the component is first mounted
 
 	return (
 		<div className="App">
@@ -32,7 +46,7 @@ function App() {
 			</header>
 			<main className="Appmain">
 				<Routes>
-					<Route path="/" exact element={<Rankings />} />
+					<Route path="/" exact element={<Rankings players={players} />} />
 				</Routes>
 			</main>
 			<footer className="Appfooter">

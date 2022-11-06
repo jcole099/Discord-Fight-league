@@ -1,13 +1,14 @@
 //COMMAND CAN ONLY BE USED IN A CHANNEL (ADMIN CHANNEL PREFERABLY)
 //MUST RERANK PLAYER's PREVIOUS DIVISION AS WELL AS THEIR NEW DIVISION
 const Players = require('../models/Players');
+const buildRankValues = require('./buildrankvalues');
 
 module.exports = {
 	name: 'moveplayer',
 	description: 'Moves a player into another division',
 	restriction: '',
 	dm: false,
-	args: 0,
+	args: 2,
 	usage: '<player_id> <division>',
 	async execute(
 		message,
@@ -45,8 +46,10 @@ module.exports = {
 
 			//SET DIVISION IN DATABASE
 			const oldDivisionName = userData[0].division;
+			buildRankValues.execute(message, oldDivisionName); //reranks previous division
 			userData[0].division = args[1];
 			userData[0].save();
+			buildRankValues.execute(message, args[1]); //reranks new division
 
 			//SET DIVISION ROLE IN DISCORD
 			const oldDivision = await message.guild.roles.cache.find(
