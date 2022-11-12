@@ -45,6 +45,7 @@ module.exports = {
 			index = Math.floor(index);
 
 			let userData = await Players.findOne({ playerID: message.author.id });
+			console.log(userData);
 
 			//check if bet amount does not exceed bank
 			if (userData.bank < bet) {
@@ -65,15 +66,16 @@ module.exports = {
 			const line = await Bettinglines.findOne({ index: index });
 
 			//prevent duplicate bets
-			for (let betLine of userData.activeBets) {
-				let currentBet = JSON.parse(betLine);
-				if (currentBet.fighterName === line.fighterName) {
-					return message.channel.send(
-						`A bet already exists for ${line.fighterName}! Use **!deletebet** to remove your previous bet.`
-					);
+			if (userData.activeBets.length > 0) {
+				for (let betLine of userData[0].activeBets) {
+					let currentBet = JSON.parse(betLine);
+					if (currentBet.fighterName === line.fighterName) {
+						return message.channel.send(
+							`A bet already exists for ${line.fighterName}! Use **!deletebet** to remove your previous bet.`
+						);
+					}
 				}
 			}
-
 			//prevent betting on both sides of a fight
 			//ensure that the opponent name from the line.opponentName is not already in userData.activeBets.FighterName
 			for (let userBets of userData.activeBets) {
@@ -89,7 +91,7 @@ module.exports = {
 			//adding bet to local value
 			//index is hard coded as a placeholder. sortActiveBetsHelper will order them later.
 			userData.activeBets.push(
-				`{ "fighterName": "${line.fighterName}", "amountBet": ${bet}, fighterOdds: ${line.fighterOdds} "index": 1
+				`{ "fighterName": "${line.fighterName}", "amountBet": ${bet}, "fighterOdds": ${line.fighterOdds} "index": 1
 			}`
 			);
 

@@ -16,14 +16,14 @@ module.exports = (activeBetsArray, message) => {
 
 		//Assigns appropriate index values to the new order
 		let indexValue = 1;
-		for (let bet of activeBetsArray) {
-			bet = JSON.parse(bet);
-			bet.index = indexValue;
-			activeBetsArray[indexValue - 1] = JSON.stringify(bet);
-			indexValue++;
+		if (activeBetsArray.length > 0) {
+			for (let bet of activeBetsArray) {
+				bet = JSON.parse(bet);
+				bet.index = indexValue;
+				activeBetsArray[indexValue - 1] = JSON.stringify(bet);
+				indexValue++;
+			}
 		}
-		// if (activeBetsArray.length > 0) {
-		// }
 		return activeBetsArray;
 	} catch (err) {
 		console.log('sortActiveBetsHelper Error');

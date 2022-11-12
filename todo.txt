@@ -1,3 +1,5 @@
+Convert playerID to string value
+
 NEED TO ADD ODDS TO player.activeBets
 
 restructure league week = calculate bets, call build rank values
