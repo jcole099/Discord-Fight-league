@@ -45,8 +45,18 @@ module.exports = {
 				week: leagueInfo[0].week,
 			});
 
-			curResults[0].winnerNames.push(`${winnerLine[0].fighterName}`);
-			await curResults[0].save();
+			//Checks if results document for current season/week has been created. If not, creates it. Otherwise updates it.
+			if (curResults.length === 0) {
+				const newResult = {
+					season: leagueInfo[0].season,
+					week: leagueInfo[0].week,
+					winnerNames: [`${winnerLine[0].fighterName}`],
+				};
+				await Results.create(newResult);
+			} else {
+				curResults[0].winnerNames.push(`${winnerLine[0].fighterName}`);
+				await curResults[0].save();
+			}
 
 			//Print info
 			await message.channel.send(

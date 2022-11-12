@@ -1,983 +1,1629 @@
 [{
-  "playerName": "Happy",
-  "playerID": "260648339320733696",
-  "playerStrike": false,
-  "division": "Elite",
-  "bank": 1250,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
-  "rankingHistory": [
-    "3:g3",
-    "4:g5"
-  ],
-  "primaryBetsRemaining": 3
-},{
   "playerName": "jackelope",
   "playerID": "260648339320733102",
   "playerStrike": false,
   "division": "Elite",
-  "bank": 1225,
+  "bank": 128,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 5,
+  "previousBets": [
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":1}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":2342, \"fighterOdds\": 160, \"index\":3}"
+  ],
+  "movement": 9,
   "rankingHistory": [
     "3:g3",
     "4:d7"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2970,
+  "__v": 17,
+  "isHuman": false,
+  "rank": 4
 },{
   "playerName": "Pepper",
   "playerID": "260648339320733103",
   "playerStrike": false,
   "division": "Elite",
-  "bank": 1225,
+  "bank": -211,
   "activeBets": [],
-  "previousBets": [],
-  "movement": -4,
+  "previousBets": [
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":-210, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:g2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3091,
+  "__v": 17,
+  "isHuman": false,
+  "rank": 3
 },{
   "playerName": "Sopaz",
   "playerID": "260648339320733104",
   "playerStrike": false,
   "division": "Elite",
-  "bank": 1225,
+  "bank": 96,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 0,
+  "previousBets": [
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":1}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":2023, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -2,
   "rankingHistory": [
     "3:g3",
     "4:m4"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2619,
+  "__v": 17,
+  "isHuman": false,
+  "rank": 5
 },{
   "playerName": "Jackie",
   "playerID": "260648339320733105",
   "playerStrike": false,
   "division": "Elite",
-  "bank": 1050,
+  "bank": 137,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 5,
+  "previousBets": [
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":1961, \"fighterOdds\": -195, \"index\":3}"
+  ],
+  "movement": -3,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3091,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 2
 },{
   "playerName": "Steve",
   "playerID": "260648339320733106",
   "playerStrike": false,
   "division": "Elite",
-  "bank": 903,
+  "bank": 1696,
   "activeBets": [],
-  "previousBets": [],
-  "movement": -4,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
+  "previousBets": [
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":989, \"fighterOdds\": -370, \"index\":3}"
   ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Corey",
-  "playerID": "260648339320733107",
-  "playerStrike": false,
-  "division": "Elite",
-  "bank": 857,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": 0,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Stacey",
-  "playerID": "260648339320733108",
-  "playerStrike": false,
-  "division": "Elite",
-  "bank": 750,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": 0,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Carl",
-  "playerID": "260648339320733109",
-  "playerStrike": false,
-  "division": "Elite",
-  "bank": 600,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": 3,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Frankle",
-  "playerID": "260648339320733110",
-  "playerStrike": false,
-  "division": "Elite",
-  "bank": 501,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": -2,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Alfred",
-  "playerID": "260648339320733201",
-  "playerStrike": false,
-  "division": "Masters",
-  "bank": 1209,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": -9,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Hitchock",
-  "playerID": "260648339320733201",
-  "playerStrike": false,
-  "division": "Masters",
-  "bank": 1159,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": -1,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Sam",
-  "playerID": "260648339320733201",
-  "playerStrike": false,
-  "division": "Masters",
-  "bank": 938,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": -2,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Bamf",
-  "playerID": "260648339320733201",
-  "playerStrike": false,
-  "division": "Masters",
-  "bank": 701,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": 4,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Kyle",
-  "playerID": "260648339320733201",
-  "playerStrike": false,
-  "division": "Masters",
-  "bank": 19,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": -2,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Mike",
-  "playerID": "260648339320733201",
-  "playerStrike": false,
-  "division": "Masters",
-  "bank": 582,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": 6,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Adam",
-  "playerID": "260648339320733201",
-  "playerStrike": false,
-  "division": "Masters",
-  "bank": 522,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Jason",
-  "playerID": "260648339320733201",
-  "playerStrike": false,
-  "division": "Masters",
-  "bank": 111,
-  "activeBets": [],
-  "previousBets": [],
-  "movement": -10,
-  "rankingHistory": [
-    "3:g3",
-    "4:d2"
-  ],
-  "primaryBetsRemaining": 3
-},{
-  "playerName": "Myers",
-  "playerID": "260648339320733201",
-  "playerStrike": false,
-  "division": "Masters",
-  "bank": 716,
-  "activeBets": [],
-  "previousBets": [],
   "movement": 2,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3185,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 1
 },{
-  "playerName": "Andrew",
-  "playerID": "260648339320733201",
+  "playerName": "Corey",
+  "playerID": "260648339320733107",
   "playerStrike": false,
-  "division": "Masters",
-  "bank": 989,
+  "division": "Elite",
+  "bank": 1695,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 0,
+  "previousBets": [
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":1}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":405, \"fighterOdds\": 160, \"index\":3}"
+  ],
+  "movement": 9,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2600,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 6
 },{
-  "playerName": "Rantay",
-  "playerID": "260648339320733202",
+  "playerName": "Stacey",
+  "playerID": "260648339320733108",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 1414,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":543, \"fighterOdds\": -195, \"index\":3}"
+  ],
+  "movement": 4,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2457,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 7
+},{
+  "playerName": "Happy",
+  "playerID": "260648339320733109",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 574,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":2}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":258, \"fighterOdds\": 165, \"index\":3}"
+  ],
+  "movement": 6,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1332,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 10
+},{
+  "playerName": "Happy",
+  "playerID": "260648339320733109456",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 932,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":974, \"fighterOdds\": 310, \"index\":3}"
+  ],
+  "movement": 6,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2406,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 8
+},{
+  "playerName": "Frankle",
+  "playerID": "260648339320733110",
+  "playerStrike": false,
+  "division": "Elite",
+  "bank": 1375,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":83, \"fighterOdds\": -370, \"index\":3}"
+  ],
+  "movement": -5,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1958,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 9
+},{
+  "playerName": "Alfred",
+  "playerID": "260648339320733201",
   "playerStrike": false,
   "division": "Masters",
-  "bank": 1201,
+  "bank": 102,
   "activeBets": [],
-  "previousBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":1966, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": 9,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2568,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 13
+},{
+  "playerName": "Hitchock",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 479,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":2256, \"fighterOdds\": 310, \"index\":3}"
+  ],
   "movement": -4,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3235,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 9
 },{
-  "playerName": "Sake",
-  "playerID": "260648339320733203",
+  "playerName": "Sam",
+  "playerID": "260648339320733201",
   "playerStrike": false,
   "division": "Masters",
-  "bank": 1109,
+  "bank": 1603,
   "activeBets": [],
-  "previousBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":1}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":1721, \"fighterOdds\": 160, \"index\":3}"
+  ],
   "movement": 5,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3824,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 2
+},{
+  "playerName": "Bamf",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 143,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":250, \"fighterOdds\": 150, \"index\":1}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":2277, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": 8,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2920,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 11
+},{
+  "playerName": "Kyle",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 2252,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":1}",
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":578, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -9,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3330,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 6
+},{
+  "playerName": "Mike",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 988,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":1}",
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":374, \"fighterOdds\": -185, \"index\":3}"
+  ],
+  "movement": 8,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1862,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 16
+},{
+  "playerName": "Adam",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 1797,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":250, \"fighterOdds\": 150, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":1242, \"fighterOdds\": 160, \"index\":3}"
+  ],
+  "movement": -8,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3539,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 4
+},{
+  "playerName": "Jason",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 1196,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":1170, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -6,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2866,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 12
+},{
+  "playerName": "Myers",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 522,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":1}",
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":308, \"fighterOdds\": -370, \"index\":3}"
+  ],
+  "movement": 7,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1330,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 19
+},{
+  "playerName": "Andrew",
+  "playerID": "260648339320733201",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 1525,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":2}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":36, \"fighterOdds\": 165, \"index\":3}"
+  ],
+  "movement": 4,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2061,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 14
+},{
+  "playerName": "Rantay",
+  "playerID": "260648339320733202",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 1963,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":1339, \"fighterOdds\": -250, \"index\":3}"
+  ],
+  "movement": 7,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3802,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 3
+},{
+  "playerName": "Sake",
+  "playerID": "260648339320733203",
+  "playerStrike": false,
+  "division": "Masters",
+  "bank": 467,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":250, \"fighterOdds\": 310, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":897, \"fighterOdds\": 165, \"index\":3}"
+  ],
+  "movement": 8,
+  "rankingHistory": [
+    "3:g3",
+    "4:d2"
+  ],
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1864,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 15
 },{
   "playerName": "Striker",
   "playerID": "260648339320733204",
   "playerStrike": false,
   "division": "Masters",
-  "bank": 1005,
+  "bank": 1694,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":975, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -9,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3169,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 10
 },{
   "playerName": "Felipe",
   "playerID": "260648339320733205",
   "playerStrike": false,
   "division": "Masters",
-  "bank": 900,
+  "bank": 2647,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":1}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":122, \"fighterOdds\": 310, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3269,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 8
 },{
   "playerName": "Brian",
   "playerID": "260648339320733206",
   "playerStrike": false,
   "division": "Masters",
-  "bank": 850,
+  "bank": 1361,
   "activeBets": [],
-  "previousBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":2040, \"fighterOdds\": 175, \"index\":3}"
+  ],
   "movement": 1,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3901,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 1
 },{
   "playerName": "Ace",
   "playerID": "260648339320733207",
   "playerStrike": false,
   "division": "Masters",
-  "bank": 704,
+  "bank": 369,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":250, \"fighterOdds\": 310, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":2668, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -7,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3537,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 5
 },{
   "playerName": "Ryan",
   "playerID": "260648339320733208",
   "playerStrike": false,
   "division": "Masters",
-  "bank": 650,
+  "bank": 539,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":1}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":2}",
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":528, \"fighterOdds\": -250, \"index\":3}"
+  ],
+  "movement": 7,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1567,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 17
 },{
   "playerName": "Joe",
   "playerID": "260648339320733209",
   "playerStrike": false,
   "division": "Masters",
-  "bank": 329,
+  "bank": 120,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":250, \"fighterOdds\": 310, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":766, \"fighterOdds\": -370, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1386,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 18
 },{
   "playerName": "Ari",
   "playerID": "260648339320733210",
   "playerStrike": false,
   "division": "Masters",
-  "bank": 146,
+  "bank": 243,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":2538, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": 3,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3281,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 7
 },{
   "playerName": "Mark",
   "playerID": "260648339320733301",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 1250,
+  "bank": 617,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":250, \"fighterOdds\": 310, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":568, \"fighterOdds\": -185, \"index\":3}"
+  ],
+  "movement": -4,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1685,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 7
 },{
   "playerName": "Shane",
   "playerID": "260648339320733302",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 1200,
+  "bank": 629,
   "activeBets": [],
-  "previousBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":1}",
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":2769, \"fighterOdds\": 160, \"index\":3}"
+  ],
   "movement": 1,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3898,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 2
 },{
   "playerName": "Tom",
   "playerID": "260648339320733303",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 1109,
+  "bank": 180,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":957, \"fighterOdds\": 165, \"index\":3}"
+  ],
+  "movement": -4,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1637,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 9
 },{
   "playerName": "Bert",
   "playerID": "260648339320733304",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 1049,
+  "bank": 1722,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":105, \"fighterOdds\": -370, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2327,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 6
 },{
   "playerName": "Christina",
   "playerID": "260648339320733305",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 951,
+  "bank": 2296,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":250, \"fighterOdds\": 150, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":391, \"fighterOdds\": -185, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3187,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 5
 },{
   "playerName": "Bob",
   "playerID": "260648339320733306",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 703,
+  "bank": 886,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":284, \"fighterOdds\": 160, \"index\":3}"
+  ],
+  "movement": 8,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1670,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 8
 },{
   "playerName": "Tim",
   "playerID": "260648339320733307",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 650,
+  "bank": 758,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":1}",
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":156, \"fighterOdds\": -185, \"index\":3}"
+  ],
+  "movement": 8,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1414,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 10
 },{
   "playerName": "Sarah",
   "playerID": "260648339320733308",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 550,
+  "bank": 3227,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":1}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":250, \"fighterOdds\": 310, \"index\":2}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":419, \"fighterOdds\": -185, \"index\":3}"
+  ],
+  "movement": -8,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 4146,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 1
 },{
   "playerName": "David",
   "playerID": "260648339320733309",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 423,
+  "bank": 2736,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":1}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":2}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":540, \"fighterOdds\": -195, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3776,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 3
 },{
   "playerName": "James",
   "playerID": "260648339320733310",
   "playerStrike": false,
   "division": "Diamond",
-  "bank": 58,
+  "bank": 1124,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":250, \"fighterOdds\": 310, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":2106, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -4,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3730,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 4
 },{
   "playerName": "Bill",
   "playerID": "260648339320733401",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 1152,
+  "bank": 2168,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":2}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":554, \"fighterOdds\": -370, \"index\":3}"
+  ],
+  "movement": -4,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3222,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 3
 },{
   "playerName": "Levi",
   "playerID": "260648339320733402",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 1090,
+  "bank": 1807,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":1}",
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":206, \"fighterOdds\": 160, \"index\":3}"
+  ],
+  "movement": 3,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2513,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 6
 },{
   "playerName": "Jess",
   "playerID": "260648339320733403",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 900,
+  "bank": 381,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":2}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":3150, \"fighterOdds\": -195, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 4031,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 1
 },{
   "playerName": "Tracy",
   "playerID": "260648339320733404",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 802,
+  "bank": 790,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":2116, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -3,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3406,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 2
 },{
   "playerName": "Gordan",
   "playerID": "260648339320733405",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 600,
+  "bank": 532,
   "activeBets": [],
-  "previousBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":2121, \"fighterOdds\": 165, \"index\":3}"
+  ],
   "movement": 1,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3153,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 4
 },{
   "playerName": "Taulk",
   "playerID": "260648339320733406",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 250,
+  "bank": 60,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":1}",
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":757, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1317,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 9
 },{
   "playerName": "Costas",
   "playerID": "260648339320733407",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 200,
+  "bank": 535,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":250, \"fighterOdds\": 310, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":1144, \"fighterOdds\": 160, \"index\":3}"
+  ],
+  "movement": -9,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2179,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 7
 },{
   "playerName": "Canary",
   "playerID": "260648339320733408",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 150,
+  "bank": 408,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":1}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":977, \"fighterOdds\": 160, \"index\":3}"
+  ],
+  "movement": 5,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1885,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 8
 },{
   "playerName": "Tladum",
   "playerID": "260648339320733409",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 102,
+  "bank": 1445,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":250, \"fighterOdds\": 150, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":1049, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -1,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2994,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 5
 },{
   "playerName": "Krechev",
   "playerID": "260648339320733410",
   "playerStrike": false,
   "division": "Gold",
-  "bank": 0,
+  "bank": 400,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":380, \"fighterOdds\": 310, \"index\":3}"
+  ],
+  "movement": 5,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1280,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 10
 },{
   "playerName": "Anderson",
   "playerID": "260648339320733501",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 1009,
+  "bank": 627,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":250, \"fighterOdds\": 150, \"index\":1}",
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":185, \"fighterOdds\": 310, \"index\":3}"
+  ],
+  "movement": -7,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1312,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 9
 },{
   "playerName": "Jessica",
   "playerID": "260648339320733502",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 905,
+  "bank": 551,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":1}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":1242, \"fighterOdds\": 160, \"index\":3}"
+  ],
+  "movement": 4,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2293,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 4
 },{
   "playerName": "Turner",
   "playerID": "260648339320733503",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 857,
+  "bank": 605,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":250, \"fighterOdds\": 150, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":573, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": 8,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1678,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 7
 },{
   "playerName": "Elizabeth",
   "playerID": "260648339320733504",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 788,
+  "bank": 975,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":2294, \"fighterOdds\": 310, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3769,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 1
 },{
   "playerName": "Orange",
   "playerID": "260648339320733505",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 600,
+  "bank": 185,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":1854, \"fighterOdds\": 310, \"index\":3}"
+  ],
+  "movement": 5,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2539,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 3
 },{
   "playerName": "Hunter",
   "playerID": "260648339320733506",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 450,
+  "bank": 2136,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":740, \"fighterOdds\": -195, \"index\":3}"
+  ],
+  "movement": 9,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3376,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 2
 },{
   "playerName": "Mercedes",
   "playerID": "260648339320733507",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 325,
+  "bank": 240,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":1141, \"fighterOdds\": -370, \"index\":3}"
+  ],
+  "movement": -7,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1881,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 5
 },{
   "playerName": "Sophia",
   "playerID": "260648339320733508",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 245,
+  "bank": 755,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":250, \"fighterOdds\": 150, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":7, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -5,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1262,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 10
 },{
   "playerName": "George",
   "playerID": "260648339320733509",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 150,
+  "bank": 802,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":2}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":523, \"fighterOdds\": 160, \"index\":3}"
+  ],
+  "movement": -3,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1825,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 6
 },{
   "playerName": "Alexander",
   "playerID": "260648339320733510",
   "playerStrike": false,
   "division": "Silver",
-  "bank": 23,
+  "bank": 1036,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":130, \"fighterOdds\": -185, \"index\":3}"
+  ],
+  "movement": 2,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1666,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 8
 },{
   "playerName": "Eddie",
   "playerID": "260648339320733601",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 754,
+  "bank": 772,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":1}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":250, \"fighterOdds\": 310, \"index\":2}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":160, \"fighterOdds\": 165, \"index\":3}"
+  ],
+  "movement": 0,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1432,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 9
 },{
   "playerName": "Brandon",
   "playerID": "260648339320733602",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 550,
+  "bank": 289,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":250, \"fighterOdds\": 310, \"index\":1}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":2}",
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":1608, \"fighterOdds\": -195, \"index\":3}"
+  ],
+  "movement": 7,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2397,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 5
 },{
   "playerName": "Broseph",
   "playerID": "260648339320733603",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 498,
+  "bank": 1182,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":250, \"fighterOdds\": -370, \"index\":1}",
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":2}",
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":1763, \"fighterOdds\": -250, \"index\":3}"
+  ],
+  "movement": 4,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3445,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 2
 },{
   "playerName": "Comrad",
   "playerID": "260648339320733604",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 410,
+  "bank": 997,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":1}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":738, \"fighterOdds\": 310, \"index\":3}"
+  ],
+  "movement": 8,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2235,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 6
 },{
   "playerName": "Tactical",
   "playerID": "260648339320733605",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 404,
+  "bank": 723,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Georges StPierre\",\"amountBet\":1486, \"fighterOdds\": -250, \"index\":3}"
+  ],
+  "movement": -7,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2709,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 3
 },{
   "playerName": "Khabib",
   "playerID": "260648339320733606",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 257,
+  "bank": 188,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":1}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":250, \"fighterOdds\": 175, \"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":1793, \"fighterOdds\": 310, \"index\":3}"
+  ],
+  "movement": 7,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2481,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 4
 },{
   "playerName": "Stephanie",
   "playerID": "260648339320733607",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 199,
+  "bank": 2418,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":250, \"fighterOdds\": 150, \"index\":1}",
+    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":250, \"fighterOdds\": 165, \"index\":2}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":731, \"fighterOdds\": -185, \"index\":3}"
+  ],
+  "movement": -1,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 3649,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 1
 },{
   "playerName": "John",
   "playerID": "260648339320733608",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 150,
+  "bank": 1532,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":1}",
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":250, \"fighterOdds\": -250, \"index\":2}",
+    "{\"fighterName\":\"Uriah Faber\",\"amountBet\":45, \"fighterOdds\": 175, \"index\":3}"
+  ],
+  "movement": -8,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 2077,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 7
 },{
   "playerName": "Alisha",
   "playerID": "260648339320733609",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 95,
+  "bank": 529,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Rose Namajunas\",\"amountBet\":250, \"fighterOdds\": 160, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":351, \"fighterOdds\": -370, \"index\":3}"
+  ],
+  "movement": -9,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1380,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 10
 },{
   "playerName": "Janis",
   "playerID": "260648339320733610",
   "playerStrike": false,
   "division": "Bronze",
-  "bank": 21,
+  "bank": 103,
   "activeBets": [],
-  "previousBets": [],
-  "movement": 1,
+  "previousBets": [
+    "{\"fighterName\":\"Jiri Prochazka\",\"amountBet\":250, \"fighterOdds\": -195, \"index\":1}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":250, \"fighterOdds\": -185, \"index\":2}",
+    "{\"fighterName\":\"Valentina Shevchenko\",\"amountBet\":1310, \"fighterOdds\": -370, \"index\":3}"
+  ],
+  "movement": 5,
   "rankingHistory": [
     "3:g3",
     "4:d2"
   ],
-  "primaryBetsRemaining": 3
+  "primaryBetsRemaining": 3,
+  "playerSrike": false,
+  "startingBank": 1913,
+  "__v": 16,
+  "isHuman": false,
+  "rank": 8
 },{
-  "playerName": "dmc_run",
-  "playerID": 260648339320730000,
+  "playerName": "Jenny12",
+  "playerID": {
+    "$numberLong": "839765213485730000"
+  },
+  "playerSrike": false,
   "division": "Bronze",
-  "bank": 550,
+  "bank": 1250,
+  "startingBank": 1250,
   "movement": 0,
-  "activeBets": [
-    "{\"fighterName\":\"BJ Penn\",\"amountBet\":200,\"index\":1}",
-    "{\"fighterName\":\"Glover Teixeira\",\"amountBet\":500,\"index\":2}"
-  ],
+  "activeBets": [],
   "previousBets": [],
   "rankingHistory": [
     "new"
   ],
-  "primaryBetsRemaining": 2,
+  "primaryBetsRemaining": 3,
+  "isHuman": true,
+  "rank": 12,
   "__v": 0
+},{
+  "playerName": "dmc_run",
+  "playerID": "260648339320733696",
+  "playerSrike": false,
+  "division": "Bronze",
+  "bank": 520,
+  "startingBank": 1250,
+  "movement": 0,
+  "activeBets": [],
+  "previousBets": [
+    "{\"fighterName\":\"BJ Penn\",\"amountBet\":300,\"fighterOdds\":150,\"index\":1}",
+    "{\"fighterName\":\"Dom Cruz\",\"amountBet\":140,\"fighterOdds\":-250,\"index\":2}",
+    "{\"fighterName\":\"Jessica Andrade\",\"amountBet\":100,\"fighterOdds\":310,\"index\":3}",
+    "{\"fighterName\":\"Weili Zhang\",\"amountBet\":190,\"fighterOdds\":-185,\"index\":4}"
+  ],
+  "rankingHistory": [
+    "new"
+  ],
+  "primaryBetsRemaining": 2,
+  "isHuman": true,
+  "rank": 11,
+  "__v": 1
 }]

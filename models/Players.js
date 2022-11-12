@@ -10,7 +10,7 @@ const playersSchema = new mongoose.Schema({
 		required: true,
 		unique: [true, 'Limited to one player per discord account'],
 	},
-	playerSrike: {
+	strike: {
 		type: Boolean,
 		default: false,
 	},
@@ -49,6 +49,10 @@ const playersSchema = new mongoose.Schema({
 		default: true,
 	},
 	rank: {
+		type: Number,
+		default: 0,
+	},
+	previousRank: {
 		type: Number,
 		default: 0,
 	},

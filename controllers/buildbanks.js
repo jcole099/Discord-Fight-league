@@ -23,7 +23,7 @@ module.exports = {
 			let userData = await Players.find({});
 			for (let player of userData) {
 				if (!player.isHuman) {
-					player.startingBank = Math.floor(Math.random() * 3000) + 1250;
+					player.startingBank = Math.floor(Math.random() * 1500) + 1250;
 					player.bank = player.startingBank;
 					await player.save(); //updates a player document https://mongoosejs.com/docs/documents.html
 				}

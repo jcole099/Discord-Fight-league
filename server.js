@@ -84,8 +84,6 @@ mongoose
 		console.log('DB connection successful!');
 	});
 
-client.login(process.env.TOKEN);
-
 //EXPRESS ROUTES
 app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));

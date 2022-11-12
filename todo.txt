@@ -1,15 +1,23 @@
-Convert playerID to string value
+CONCLUDE WEEK WORKFLOW~~~~~~~~~~~~~~~~~~~
+1.) !buildbanks
+2.) !buildranks
+3.) !buildbets
+4.) !deleteresults
+5.) !selectwinner (3x)
+6.) !concludeweek
 
-NEED TO ADD ODDS TO player.activeBets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-restructure league week = calculate bets, call build rank values
+
+
+
+
 
 Restructure Season
     New season rankings based off of last season rank
     add value to player.rankingshistory
-
-
-
+    reset strikes
+    Figure out how to handle elite players leaving
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~WORK PERFORMED:
 Create leagueState model
@@ -24,15 +32,24 @@ develop clearresults command
     copy lines into linesneeding results
     clear results.winnersnames array
 
-develop setresult command
+develop selectwinner command
     use printlines to display lines
     select result by index from printlines
     print all linesneedsresult with index = 0
 
+Convert playerID to string value
 
+NEED TO ADD ODDS TO player.activeBets
 
+remove need for user to be player to use commands
 
+CREATE NEW RESULTS DOCUMENT, not sure where to implement it
 
+conclude week
+    verify bets have been placed appropriately.
+
+conclude week
+    Need to resolve ties
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AFTER CS469
@@ -42,4 +59,5 @@ Build secret admin page that has tutorials for workflow
 ~~~~~~~~~~Future bot implementation
 Add attribute "isSmart" to Players model
 Smart bots only pick favorited fighters
+bots need to pick at least 3 primary fights, and a total of at least 1250
 Command: count total players & count human players

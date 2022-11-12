@@ -17,8 +17,13 @@ module.exports = {
 		adminRoom
 	) {
 		try {
+			('use strict');
 			let userData = await Players.find({});
+			await Players.updateMany({}, { $unset: { playerSrike: '' } });
 			for (let player of userData) {
+				console.log(player);
+				player.playerStrike = undefined;
+				player.playerSrike = undefined;
 				// let multiplier = 1;
 				// let randNegative = Math.random();
 				// randNegative < 0.5 ? (multiplier = -1) : (multiplier = 1);

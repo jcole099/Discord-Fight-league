@@ -33,17 +33,18 @@ module.exports = async (message, client, freezeBets) => {
 	warRoom = client.channels.cache.get(`${process.env.DISCORD_WARROOMID}`);
 	adminRoom = client.channels.cache.get(`${process.env.DISCORD_ADMINROOMID}`);
 
+	//TODO: ANYONE CAN USE COMMANDS ATM
 	//Ignore all commands if user doesn't have the player role, UNLESS it is an admin command
-	const someGuy = await myGuild.members.fetch(message.author.id);
-	if (
-		!someGuy._roles.includes(`${process.env.DISCORD_PLAYERROLEID}`) &&
-		command.name !== 'newplayer' &&
-		command.restriction === ''
-	) {
-		return message.author.send(
-			`You must be a current player to use that command! Type '!newplayer' to start playing.`
-		);
-	}
+	// const someGuy = await myGuild.members.fetch(message.author.id);
+	// if (
+	// 	!someGuy._roles.includes(`${process.env.DISCORD_PLAYERROLEID}`) &&
+	// 	command.name !== 'newplayer' &&
+	// 	command.restriction === ''
+	// ) {
+	// 	return message.author.send(
+	// 		`You must be a current player to use that command! Type '!newplayer' to start playing.`
+	// 	);
+	// }
 
 	//ensures that appropriate arguments are included with the command. If not, sends the user a reply with proper syntax
 	if (command.args && args.length != command.args) {

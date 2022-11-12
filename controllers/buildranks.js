@@ -1,9 +1,10 @@
 //IS CALLED BY ADMINS
 //IS CALLED BY MOVEPLAYER.JS
 const Players = require('../models/Players');
+const resolveTiesHelper = require('../helpers/resolveTiesHelper');
 
 module.exports = {
-	name: 'buildrankvalues',
+	name: 'buildranks',
 	description:
 		'DEVELOPMENT: Calculates the rank values for all league players based on their starting bank. Optional parameter of division.',
 	restriction: '',
@@ -35,11 +36,11 @@ module.exports = {
 
 			//get all players from a each division
 			for (let division of divisionNames) {
-				let curDivisionPlayers = await Players.find({ division: division });
+				let unorderedDivPlayers = await Players.find({ division: division });
 				let orderedDivPlayers = [];
 
 				//Order division in a temp array
-				for (let player of curDivisionPlayers) {
+				for (let player of unorderedDivPlayers) {
 					let low = 0;
 					let high = orderedDivPlayers.length;
 
@@ -54,9 +55,11 @@ module.exports = {
 					}
 					//if equal, low is the index of the tie
 					//splice inserts cur it at the tie location and pushes everything down the array
-					//FIXME: MUST RESOLVE TIES
 					orderedDivPlayers.splice(low, 0, player); //places ties unordered consecutively.
 				}
+
+				//CHECK FOR TIES AND BREAK THEM
+				orderedDivPlayers = resolveTiesHelper(orderedDivPlayers);
 
 				//assign rank values
 				for (let index in orderedDivPlayers) {

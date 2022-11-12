@@ -4,7 +4,7 @@ const Players = require('../models/Players');
 const Bettinglines = require('../models/Bettinglines');
 
 module.exports = {
-	name: 'buildrandombets',
+	name: 'buildbets',
 	description: 'DEVELOPMENT: Assigns random bets to the entire league',
 	restriction: '',
 	dm: false,
@@ -55,14 +55,16 @@ module.exports = {
 							); //TODO: ensure that this string is formated. Could be the source of error in the future
 							//reduce bank
 							player.bank -= 250;
+							player.primaryBetsRemaining = player.primaryBetsRemaining - 1;
 						} else {
 							//bet random 250 through balance
 							let randBetAmount =
-								Math.floor(Math.random() * player.bank - 250) + 250;
+								Math.floor(Math.random() * (player.bank - 250)) + 250;
 							playerTempBetArray.push(
 								`{"fighterName":"${linesNamesCopy[randIndex].fighterName}","amountBet":${randBetAmount}, "fighterOdds": ${linesNamesCopy[randIndex].fighterOdds}, "index":${betCount}}`
 							);
 							player.bank -= randBetAmount;
+							player.primaryBetsRemaining = player.primaryBetsRemaining - 1;
 						}
 
 						//remove fighter and opponent lines (so can't dup bet or bet on opponent)

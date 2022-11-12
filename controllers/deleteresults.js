@@ -4,8 +4,9 @@ const Leaguestatus = require('../models/Leaguestatus');
 const Results = require('../models/Results');
 
 module.exports = {
-	name: 'clearresults',
-	description: 'Clears all results information.',
+	name: 'deleteresults',
+	description:
+		'Deletes all results information. Places a fresh copy of the bettinglines into Linesneedingresults',
 	restriction: '',
 	dm: false,
 	args: 0,
@@ -43,8 +44,10 @@ module.exports = {
 				week: leagueInfo[0].week,
 			});
 
-			curResults[0].winnerNames = [];
-			await curResults[0].save();
+			if (curResults.length > 0) {
+				curResults[0].winnerNames = [];
+				await curResults[0].save();
+			}
 
 			await message.channel.send(`**Results cleared**`);
 		} catch (err) {
