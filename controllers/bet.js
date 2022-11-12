@@ -45,7 +45,6 @@ module.exports = {
 			index = Math.floor(index);
 
 			let userData = await Players.findOne({ playerID: message.author.id });
-			console.log(userData);
 
 			//check if bet amount does not exceed bank
 			if (userData.bank < bet) {
@@ -67,7 +66,7 @@ module.exports = {
 
 			//prevent duplicate bets
 			if (userData.activeBets.length > 0) {
-				for (let betLine of userData[0].activeBets) {
+				for (let betLine of userData.activeBets) {
 					let currentBet = JSON.parse(betLine);
 					if (currentBet.fighterName === line.fighterName) {
 						return message.channel.send(
@@ -91,8 +90,7 @@ module.exports = {
 			//adding bet to local value
 			//index is hard coded as a placeholder. sortActiveBetsHelper will order them later.
 			userData.activeBets.push(
-				`{ "fighterName": "${line.fighterName}", "amountBet": ${bet}, "fighterOdds": ${line.fighterOdds} "index": 1
-			}`
+				`{"fighterName":"${line.fighterName}", "amountBet":${bet}, "fighterOdds":${line.fighterOdds}, "index": 1}`
 			);
 
 			//reduces primary bets remaining

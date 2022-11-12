@@ -37,7 +37,7 @@ module.exports = {
 
 				//Builds an easily readable list of active bets
 				let totalSpentWeek = 0;
-				for (bet of userData.activeBets) {
+				for (let bet of userData.activeBets) {
 					totalSpentWeek += JSON.parse(bet).amountBet;
 					userBets.push(JSON.parse(bet).fighterName);
 					reply += `\n**${JSON.parse(bet).index}** - **${
@@ -61,7 +61,7 @@ module.exports = {
 				if (args.activeBets.length === 0) {
 					reply += `\n**There are no active bets**`;
 				} else {
-					for (bet of args.activeBets) {
+					for (let bet of args.activeBets) {
 						totalSpentWeek += JSON.parse(bet).amountBet;
 						reply += `\n**${JSON.parse(bet).index}** - **${
 							JSON.parse(bet).fighterName

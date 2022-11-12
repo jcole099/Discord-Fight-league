@@ -27,7 +27,7 @@ module.exports = {
 
 			const newPlayer = {
 				playerName: message.author.username,
-				playerID: message.author.id,
+				playerID: `${message.author.id}`,
 				rank: bronzePlayerCount.length + 1,
 			};
 
