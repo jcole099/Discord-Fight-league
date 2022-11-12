@@ -1,3 +1,31 @@
+NEED TO ADD ODDS TO player.activeBets
+
+restructure league week = calculate bets, call build rank values
+
+Restructure Season
+    New season rankings based off of last season rank
+    add value to player.rankingshistory
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~WORK PERFORMED:
+Create leagueState model
+    Save season #
+    Save week #
+
+Create Linesneedingresults model
+    shows remaining lines that need results
+
+develop clearresults command
+    to be used in the event of an error
+    copy lines into linesneeding results
+    clear results.winnersnames array
+
+develop setresult command
+    use printlines to display lines
+    select result by index from printlines
+    print all linesneedsresult with index = 0
 
 
 
@@ -5,19 +33,9 @@
 
 
 
-
-
-
-
-~~~~~~~~~~~~~Restructure Event
-
-
-
-~~~~~~~~~~~~~Restructure Season
-New season rankings based off of last season rank
-
-~~~~~~~~~~~~ Later
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AFTER CS469
 Send DMs to players who try to use commands in regular chat or aren't active players
+Build secret admin page that has tutorials for workflow
 
 ~~~~~~~~~~Future bot implementation
 Add attribute "isSmart" to Players model

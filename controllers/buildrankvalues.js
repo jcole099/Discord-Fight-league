@@ -61,7 +61,7 @@ module.exports = {
 				//assign rank values
 				for (let index in orderedDivPlayers) {
 					orderedDivPlayers[index].rank = parseInt(index) + 1;
-					orderedDivPlayers[index].save();
+					await orderedDivPlayers[index].save();
 				}
 			}
 

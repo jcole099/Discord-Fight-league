@@ -29,6 +29,7 @@ module.exports = {
 			for (let line of lines) {
 				linesNames.push({
 					fighterName: line.fighterName,
+					fighterOdds: line.fighterOdds,
 					opponentName: line.opponentName,
 				});
 			}
@@ -50,7 +51,7 @@ module.exports = {
 						if (betCount < 3) {
 							//add bet to local variable
 							playerTempBetArray.push(
-								`{"fighterName":"${linesNamesCopy[randIndex].fighterName}","amountBet":250, "index":${betCount}}`
+								`{"fighterName":"${linesNamesCopy[randIndex].fighterName}","amountBet":250, "fighterOdds": ${linesNamesCopy[randIndex].fighterOdds}, "index":${betCount}}`
 							); //TODO: ensure that this string is formated. Could be the source of error in the future
 							//reduce bank
 							player.bank -= 250;
@@ -59,7 +60,7 @@ module.exports = {
 							let randBetAmount =
 								Math.floor(Math.random() * player.bank - 250) + 250;
 							playerTempBetArray.push(
-								`{"fighterName":"${linesNamesCopy[randIndex].fighterName}","amountBet":${randBetAmount}, "index":${betCount}}`
+								`{"fighterName":"${linesNamesCopy[randIndex].fighterName}","amountBet":${randBetAmount}, "fighterOdds": ${linesNamesCopy[randIndex].fighterOdds}, "index":${betCount}}`
 							);
 							player.bank -= randBetAmount;
 						}

@@ -1,4 +1,4 @@
-module.exports = (activeBetsArray) => {
+module.exports = (activeBetsArray, message) => {
 	try {
 		//Sorts the array
 		activeBetsArray.sort(function (a, b) {
@@ -22,6 +22,8 @@ module.exports = (activeBetsArray) => {
 			activeBetsArray[indexValue - 1] = JSON.stringify(bet);
 			indexValue++;
 		}
+		// if (activeBetsArray.length > 0) {
+		// }
 		return activeBetsArray;
 	} catch (err) {
 		console.log('sortActiveBetsHelper Error');

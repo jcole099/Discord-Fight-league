@@ -1,3 +1,5 @@
+//creates random banks for the league
+
 const Players = require('../models/Players');
 
 module.exports = {

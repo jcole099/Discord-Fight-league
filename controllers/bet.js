@@ -65,7 +65,7 @@ module.exports = {
 			const line = await Bettinglines.findOne({ index: index });
 
 			//prevent duplicate bets
-			for (betLine of userData.activeBets) {
+			for (let betLine of userData.activeBets) {
 				let currentBet = JSON.parse(betLine);
 				if (currentBet.fighterName === line.fighterName) {
 					return message.channel.send(
@@ -76,7 +76,7 @@ module.exports = {
 
 			//prevent betting on both sides of a fight
 			//ensure that the opponent name from the line.opponentName is not already in userData.activeBets.FighterName
-			for (userBets of userData.activeBets) {
+			for (let userBets of userData.activeBets) {
 				if (JSON.parse(userBets).fighterName === line.opponentName) {
 					return message.channel.send(
 						`Cannot bet on both sides of a fight! You already have a bet on ${
@@ -87,8 +87,9 @@ module.exports = {
 			}
 
 			//adding bet to local value
+			//index is hard coded as a placeholder. sortActiveBetsHelper will order them later.
 			userData.activeBets.push(
-				`{ "fighterName": "${line.fighterName}", "amountBet": ${bet}, "index": 1
+				`{ "fighterName": "${line.fighterName}", "amountBet": ${bet}, fighterOdds: ${line.fighterOdds} "index": 1
 			}`
 			);
 
@@ -100,7 +101,7 @@ module.exports = {
 			userData.bank -= bet;
 
 			//Sort active betting line locally
-			userData.activeBets = sortActiveBetsHelper(userData.activeBets);
+			userData.activeBets = sortActiveBetsHelper(userData.activeBets, message);
 
 			//Upload sorted active bets
 			await Players.findOneAndUpdate({ playerID: message.author.id }, userData);

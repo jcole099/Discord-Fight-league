@@ -17,9 +17,9 @@ module.exports = {
 		adminRoom
 	) {
 		try {
-			let lines = await Bettinglines.find().sort({ fighterName: 1 }); //get all lines, sort them in order of name, ascending (1)
+			let lines = await Bettinglines.find().sort({ index: 1 }); //get all lines, sort them by index (already sorted by fightername), ascending (1)
 			let reply = '';
-			for (line of lines) {
+			for (let line of lines) {
 				if (line.fighterOdds > 0) {
 					//adds a '+' to front of fighterOdds if positive
 					reply += `\n**${line.index}** - **${line.fighterName}** **+${line.fighterOdds}** *(vs. ${line.opponentName})*`;
