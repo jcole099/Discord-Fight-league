@@ -1,25 +1,17 @@
-CONCLUDE WEEK WORKFLOW~~~~~~~~~~~~~~~~~~~
-1.) !buildbanks
-2.) !buildranks
-3.) !buildbets
-4.) !deleteresults
-5.) !selectwinner (3x)
-6.) !concludeweek
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TODO:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+resolve bug for removing playing during build week, second strike
+REFACTOR FOR-OF LOOP
+
+rerank division upon !deleteplayer
+DM url on how to get started when player uses !newplayer
 
 
 
 
 
-Restructure Season
-    New season rankings based off of last season rank
-    add value to player.rankingshistory
-    reset strikes
-    Figure out how to handle elite players leaving
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~WORK PERFORMED:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~WORK PERFORMED PREVIOUS WEEK:
 Create leagueState model
     Save season #
     Save week #
@@ -50,6 +42,13 @@ conclude week
 
 conclude week
     Need to resolve ties
+    build to helper functions to solve this
+
+Restructure Season
+    New season rankings based off of last season rank
+    add value to player.rankingshistory
+    reset strikes
+    Figure out how to handle elite players leaving
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AFTER CS469

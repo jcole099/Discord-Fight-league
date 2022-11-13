@@ -20,8 +20,10 @@ module.exports = {
 			const userData = await Players.find({ playerID: message.author.id });
 
 			let totalSpentWeek = 0;
-			for (bet of userData.activeBets) {
-				totalSpentWeek += JSON.parse(bet).amountBet;
+			if (userData[0].activeBets.length > 0) {
+				for (let bet of userData[0].activeBets) {
+					totalSpentWeek += JSON.parse(bet).amountBet;
+				}
 			}
 
 			//amount remaining required to spend this week:
@@ -30,7 +32,7 @@ module.exports = {
 				remainingToSpendWeek = 1250 - totalSpentWeek;
 			}
 
-			const reply = `**Bank: $${userData.bank}**\n*Primary Bets Remaining: ${userData.primaryBetsRemaining}\nRemaining money required to spend this week: $${remainingToSpendWeek}*`;
+			const reply = `**Bank: $${userData[0].bank}**\n*Primary Bets Remaining: ${userData[0].primaryBetsRemaining}\nRemaining money required to spend this week: $${remainingToSpendWeek}*`;
 
 			message.channel.send(reply);
 		} catch (err) {

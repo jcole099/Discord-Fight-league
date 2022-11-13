@@ -28,8 +28,5 @@ module.exports = (activeBetsArray, message) => {
 	} catch (err) {
 		console.log('sortActiveBetsHelper Error');
 		console.log(err);
-		return message.channel.send(
-			'sortActiveBetsHelper error. Please contact an Admin.'
-		);
 	}
 };
