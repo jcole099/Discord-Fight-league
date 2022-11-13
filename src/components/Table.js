@@ -5,7 +5,7 @@ function Table({ players, specialTier }) {
 	//algorithm for determining positions of 33%,33%,33%
 	//rankUpNum includes the index to rank up (plus everyone above this index)
 	//rankDownNum include the index to rank down (plus everyone below them)
-	let rankUpNum = Math.floor(players.length * 0.33);
+	let rankUpNum = Math.round(players.length * 0.33);
 	let rankDownNum = players.length - rankUpNum;
 	rankUpNum -= 1;
 

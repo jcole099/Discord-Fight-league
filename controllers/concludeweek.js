@@ -46,8 +46,8 @@ module.exports = {
 			const winnerNames = curResults[0].winnerNames;
 
 			//ASSIGN NEW BANK DATA, PREVIOUSBETS, PREVIOUSRANK
-			let indexesToBeRemoved = [];
-			for (let [index, player] of userData.entries()) {
+			for (let i = userData.length - 1; i >= 0; i--) {
+				let player = userData[i];
 				let playerHasStriked = false;
 
 				//CHECK FOR BETTING GUIDELINE ADHERENCE
@@ -72,7 +72,7 @@ module.exports = {
 
 							//TODO: delete user from array
 							// Record index so it can be deleted when the forloop finishes, below
-							indexesToBeRemoved.push(index);
+							userData.splice(i, 1);
 							continue;
 						} else {
 							//FIRST STRIKE
@@ -184,18 +184,20 @@ module.exports = {
 						orderedDivPlayers[index].previousRank -
 						orderedDivPlayers[index].rank;
 					orderedDivPlayers[index].primaryBetsRemaining = 3;
-					orderedDivPlayers[index].save();
+					await orderedDivPlayers[index].save();
 				}
 			}
 
 			// Increment week in league info
 			//TODO: COMMENTED OUT FOR DEVELOPMENT TESTING
 			leagueInfo[0].week = leagueInfo[0].week + 1;
-			leagueInfo[0].save();
+			await leagueInfo[0].save();
 
 			// test
 
-			message.channel.send('**End of week computation has completed!**');
+			return await message.channel.send(
+				'**End of week computation has completed!**'
+			);
 		} catch (err) {
 			console.log(err);
 			return await message.channel.send(

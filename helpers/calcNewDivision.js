@@ -11,7 +11,7 @@ module.exports = (division, divisionCount, rank) => {
 		if (division === 'Masters') {
 			if (rank <= 3) {
 				return 'Elite';
-			} else if (rank > divisionCount - Math.floor(divisionCount * 0.33)) {
+			} else if (rank > divisionCount - Math.round(divisionCount * 0.33)) {
 				return 'Diamond';
 			} else {
 				return 'Masters';
@@ -19,9 +19,9 @@ module.exports = (division, divisionCount, rank) => {
 		}
 
 		if (division === 'Diamond') {
-			if (rank <= Math.floor(divisionCount * 0.33)) {
+			if (rank <= Math.round(divisionCount * 0.33)) {
 				return 'Masters';
-			} else if (rank > divisionCount - Math.floor(divisionCount * 0.33)) {
+			} else if (rank > divisionCount - Math.round(divisionCount * 0.33)) {
 				return 'Gold';
 			} else {
 				return 'Diamond';
@@ -29,9 +29,9 @@ module.exports = (division, divisionCount, rank) => {
 		}
 
 		if (division === 'Gold') {
-			if (rank <= Math.floor(divisionCount * 0.33)) {
+			if (rank <= Math.round(divisionCount * 0.33)) {
 				return 'Diamond';
-			} else if (rank > divisionCount - Math.floor(divisionCount * 0.33)) {
+			} else if (rank > divisionCount - Math.round(divisionCount * 0.33)) {
 				return 'Silver';
 			} else {
 				return 'Gold';
@@ -39,17 +39,17 @@ module.exports = (division, divisionCount, rank) => {
 		}
 
 		if (division === 'Silver') {
-			if (rank <= Math.floor(divisionCount * 0.33)) {
+			if (rank <= Math.round(divisionCount * 0.33)) {
 				return 'Gold';
-			} else if (rank > divisionCount - Math.floor(divisionCount * 0.33)) {
+			} else if (rank > divisionCount - Math.round(divisionCount * 0.33)) {
 				return 'Bronze';
 			} else {
 				return 'Silver';
 			}
 		}
 
-		if (division === 'Diamond') {
-			if (rank <= Math.floor(divisionCount * 0.33)) {
+		if (division === 'Bronze') {
+			if (rank <= Math.round(divisionCount * 0.33)) {
 				return 'Silver';
 			} else {
 				return 'Bronze';

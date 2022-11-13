@@ -56,7 +56,7 @@ module.exports = {
 				player.movement = 0;
 
 				// SET NEW DIVISION
-				const curDivisionCount = 0;
+				let curDivisionCount = 0;
 				if (player.division === 'Elite') {
 					curDivisionCount = eliteCount;
 				} else if (player.division === 'Masters') {
@@ -67,7 +67,7 @@ module.exports = {
 					curDivisionCount = goldCount;
 				} else if (player.division === 'Silver') {
 					curDivisionCount = silverCount;
-				} else {
+				} else if (player.division === 'Bronze') {
 					curDivisionCount = bronzeCount;
 				}
 				player.division = calcNewDivision(
@@ -75,9 +75,6 @@ module.exports = {
 					curDivisionCount,
 					player.rank
 				);
-
-				// SAVE PLAYER DATA
-				player.save();
 			}
 
 			//rerank divison based on Last Season Rank (the whole division will be a tie for player.startingBank)
@@ -104,7 +101,8 @@ module.exports = {
 				//ASSIGN RANK VALUES AND MOVEMENT, RESET PRIMARY BETS
 				for (let index in orderedDivPlayers) {
 					orderedDivPlayers[index].rank = parseInt(index) + 1;
-					orderedDivPlayers[index].save();
+					//SAVE PLAYER DATA
+					await orderedDivPlayers[index].save();
 				}
 			}
 
@@ -112,7 +110,11 @@ module.exports = {
 			const leagueInfo = await Leaguestatus.find(); //get league info
 			leagueInfo[0].week = 1;
 			leagueInfo[0].season = leagueInfo[0].season + 1;
-			leagueInfo[0].save();
+			await leagueInfo[0].save();
+
+			return await message.channel.send(
+				'Season complete! League restructured!'
+			);
 		} catch (err) {
 			console.log(err);
 			return message.channel.send(

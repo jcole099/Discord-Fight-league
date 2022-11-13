@@ -1,8 +1,11 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TODO:
 
 
-resolve bug for removing playing during build week, second strike
-REFACTOR FOR-OF LOOP
+
+
+concludeseason
+    bronze division not getting movement set to 0
+    startingbanks not being set to 1250
 
 rerank division upon !deleteplayer
 DM url on how to get started when player uses !newplayer
@@ -49,6 +52,12 @@ Restructure Season
     add value to player.rankingshistory
     reset strikes
     Figure out how to handle elite players leaving
+
+
+resolve bug for removing playing during build week, second strike
+REFACTOR FOR-OF LOOP
+
+Math.round for rankings instead of Math.floor
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AFTER CS469

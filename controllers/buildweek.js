@@ -1,3 +1,14 @@
+// CONCLUDE WEEK WORKFLOW~~~~~~~~~~~~~~~~~~~
+// 1.) !buildbanks
+// 2.) !buildranks
+
+// ~can repeat 3-6 once the database is initialized.
+// The !buildweek command accomplished the below tasks.
+// 3.) !buildbets
+// 4.) !deleteresults
+// 5.) !selectwinner (3x)
+// 6.) !concludeweek
+
 const buildbets = require('./buildbets');
 const deleteresults = require('./deleteresults');
 const selectwinner = require('./selectwinner');
