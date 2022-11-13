@@ -53,7 +53,7 @@ REFACTOR FOR-OF LOOP
 
 Math.round for rankings instead of Math.floor
 
-reset player.rankhistory = new AKA !resetleague
+reset player.rankhistory = new AKA !resetleague command
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AFTER CS469
