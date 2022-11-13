@@ -59,6 +59,9 @@ module.exports = {
 			}
 
 			await Players.create(newPlayer);
+
+			const someGuy = await myGuild.members.fetch(message.author.id);
+			someGuy.send('Welcome to DFL! Placeholder text from !newplayer');
 			return await warRoom.send(
 				`Welcome to Discord Fight League <@${message.author.id}>`
 			);

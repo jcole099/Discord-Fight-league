@@ -1,4 +1,5 @@
 const Players = require('../models/Players');
+const buildRanksHelper = require('../helpers/buildRanksHelper');
 
 module.exports = {
 	name: 'deleteplayer',
@@ -40,6 +41,9 @@ module.exports = {
 			await Players.deleteOne({ playerID: args[0] });
 			let reply = '**Player removed**\n\n';
 			reply += `Player ID: ${userData.playerID}\nPlayer Name: ${userData.playerName}`;
+
+			// Rerank division
+			buildRanksHelper(userData.division);
 
 			return message.channel.send(reply);
 		} catch (err) {

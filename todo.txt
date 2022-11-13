@@ -3,15 +3,9 @@
 
 
 
-concludeseason
-    bronze division not getting movement set to 0
-    startingbanks not being set to 1250
-
-rerank division upon !deleteplayer
-DM url on how to get started when player uses !newplayer
 
 
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TODO: Longer term
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~WORK PERFORMED PREVIOUS WEEK:
@@ -58,6 +52,8 @@ resolve bug for removing playing during build week, second strike
 REFACTOR FOR-OF LOOP
 
 Math.round for rankings instead of Math.floor
+
+reset player.rankhistory = new AKA !resetleague
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AFTER CS469

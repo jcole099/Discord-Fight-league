@@ -2,6 +2,7 @@
 //THIS COMMAND ALSO RERANKS PREVIOUS DIVISION AND NEW DIVISION
 const Players = require('../models/Players');
 const buildRanks = require('./buildranks');
+const buildRanksHelper = require('../helpers/buildRanksHelper');
 
 module.exports = {
 	name: 'moveplayer',
@@ -39,17 +40,17 @@ module.exports = {
 					'You did not provide a valid player ID number'
 				);
 			}
-			const userData = await Players.find({ playerID: parseInt(args[0]) });
+			const userData = await Players.find({ playerID: args[0] });
 			if (userData.length === 0) {
 				return message.channel.send('No player found with that ID');
 			}
 
 			//SET DIVISION IN DATABASE
 			const oldDivisionName = userData[0].division;
-			buildRanks.execute(message, oldDivisionName); //reranks previous division
+			buildRanksHelper(oldDivisionName); //reranks previous division
 			userData[0].division = args[1];
 			userData[0].save();
-			buildRanks.execute(message, args[1]); //reranks new division
+			buildRanksHelper(args[1]); //reranks new division
 
 			//SET DIVISION ROLE IN DISCORD
 			const oldDivision = await message.guild.roles.cache.find(

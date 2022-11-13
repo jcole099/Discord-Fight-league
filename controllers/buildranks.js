@@ -1,5 +1,3 @@
-//IS CALLED BY ADMINS
-//IS CALLED BY MOVEPLAYER.JS
 const Players = require('../models/Players');
 const resolveTiesHelper = require('../helpers/resolveTiesHelper');
 

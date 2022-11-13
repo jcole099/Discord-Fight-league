@@ -1,5 +1,5 @@
 //Breaks ties by analyzing previous rankings
-//is called by concludeweek and buildranks
+//is called by concludeweek, buildranks, buildRanksHelper
 
 const scorePreviousRankingHelper = require('./scorePreviousRankingHelper');
 
@@ -9,8 +9,8 @@ module.exports = (orderedArray) => {
 		let tieEnd = orderedArray.length;
 		let tieActive = false;
 		for (let i = 1; i < orderedArray.length; i++) {
-			prevEl = orderedArray[i - 1];
-			curEl = orderedArray[i];
+			let prevEl = orderedArray[i - 1];
+			let curEl = orderedArray[i];
 
 			// No tie currently ongoing, initialize tie start
 			if (prevEl.startingBank === curEl.startingBank && !tieActive) {
