@@ -23,6 +23,8 @@ module.exports = {
 		adminRoom
 	) {
 		try {
+			let oldDivisionName = ''
+			let newDivisionName = ''
 			let userData = await Players.find();
 			let curSeason = await Leaguestatus.find();
 			curSeason = curSeason[0].season;
@@ -50,6 +52,7 @@ module.exports = {
 				player.rankingHistory.push(
 					convertRankToPrevFormat(curSeason, player.division, player.rank)
 				);
+				oldDivisionName = player.division
 				player.strike = false;
 				player.startingBank = 1250;
 				player.bank = 1250;
@@ -75,6 +78,7 @@ module.exports = {
 					curDivisionCount,
 					player.rank
 				);
+				newDivisionName = player.division
 			}
 
 			//rerank divison based on Last Season Rank (the whole division will be a tie for player.startingBank)
@@ -103,6 +107,9 @@ module.exports = {
 					orderedDivPlayers[index].rank = parseInt(index) + 1;
 					//SAVE PLAYER DATA
 					await orderedDivPlayers[index].save();
+
+					//TODO: SET PLAYER ROLES
+					
 				}
 			}
 

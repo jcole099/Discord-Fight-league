@@ -1,7 +1,6 @@
 //COMMAND CAN ONLY BE USED IN A CHANNEL (ADMIN CHANNEL PREFERABLY)
 //THIS COMMAND ALSO RERANKS PREVIOUS DIVISION AND NEW DIVISION
 const Players = require('../models/Players');
-const buildRanks = require('./buildranks');
 const buildRanksHelper = require('../helpers/buildRanksHelper');
 
 module.exports = {
@@ -60,8 +59,12 @@ module.exports = {
 				(role) => role.name === args[1]
 			);
 
-			await message.member.roles.add(newDivision);
-			await message.member.roles.remove(oldDivision);
+			// await message.member.roles.add(newDivision);
+			// await message.member.roles.remove(oldDivision);
+
+			const playerToBeMoved = await myGuild.members.fetch(args[0])
+			await playerToBeMoved.roles.add(newDivision);
+			await playerToBeMoved.roles.remove(oldDivision);
 
 			message.channel.send(
 				`**${userData[0].playerName} moved to division: ${args[1]}!**`
