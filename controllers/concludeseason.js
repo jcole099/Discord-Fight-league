@@ -25,6 +25,7 @@ module.exports = {
 		try {
 			let oldDivisionName = ''
 			let newDivisionName = ''
+
 			let userData = await Players.find();
 			let curSeason = await Leaguestatus.find();
 			curSeason = curSeason[0].season;
@@ -109,7 +110,17 @@ module.exports = {
 					await orderedDivPlayers[index].save();
 
 					//TODO: SET PLAYER ROLES
-					
+					if (orderedDivPlayers[index].isHuman) {
+						const oldDivision = await message.guild.roles.cache.find(
+							(role) => role.name === oldDivisionName
+						);
+						const newDivision = await message.guild.roles.cache.find(
+							(role) => role.name === newDivisionName
+						);
+						const playerToBeMoved = await myGuild.members.fetch(orderedDivPlayers[index].playerID)
+						await playerToBeMoved.roles.add(newDivision);
+						await playerToBeMoved.roles.remove(oldDivision);
+					}
 				}
 			}
 

@@ -60,8 +60,7 @@
   src: url("../public/neuropolitical_rg.eot") format("eot"),
     url("../public/neuropolitical_rg.woff") format("woff"),
     url("../public/neuropolitical_rg.ttf") format("truetype"),
-    url("../public/neuropolitical_rg.svg#NeuropoliticalRg-Regular")
-      format("svg");
+    url("../public/neuropolitical_rg.svg#NeuropoliticalRg-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -71,7 +70,8 @@ body {
   height: 100%;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden; /*hides anything that is off the page horizontally. parent element of slid-off element must have position: relative */
+  overflow-x: hidden;
+  /*hides anything that is off the page horizontally. parent element of slid-off element must have position: relative */
 }
 
 * {
@@ -192,6 +192,7 @@ h1 span {
   background-color: var(--dflblack);
   display: inline-block;
 }
+
 .navBar {
   padding-top: 3px;
   padding-bottom: 3px;
@@ -253,11 +254,9 @@ h1 span {
 
 .mastersTitle {
   width: 50%;
-  background-image: linear-gradient(
-    to right,
-    var(--dflmasters),
-    var(--dflblackgray)
-  );
+  background-image: linear-gradient(to right,
+      var(--dflmasters),
+      var(--dflblackgray));
   transform: skew(-45deg);
   margin-left: 20px;
   border: 1px solid var(--dflmasters);
@@ -270,11 +269,9 @@ h1 span {
 
 .eliteTitle {
   width: 50%;
-  background-image: linear-gradient(
-    to right,
-    var(--dflred),
-    var(--dflblackgray)
-  );
+  background-image: linear-gradient(to right,
+      var(--dflred),
+      var(--dflblackgray));
   transform: skew(-45deg);
   margin-left: 20px;
   border: 1px solid var(--dflred);
@@ -288,11 +285,9 @@ h1 span {
 .diamondTitle {
   width: 50%;
   color: var(--dflblack);
-  background-image: linear-gradient(
-    to right,
-    var(--dfldiamond),
-    var(--dflblackgray)
-  );
+  background-image: linear-gradient(to right,
+      var(--dfldiamond),
+      var(--dflblackgray));
   transform: skew(-45deg);
   margin-left: 20px;
   border: 1px solid var(--dfldiamond);
@@ -306,11 +301,9 @@ h1 span {
 .goldTitle {
   width: 50%;
   color: var(--dflblack);
-  background-image: linear-gradient(
-    to right,
-    var(--dflgold),
-    var(--dflblackgray)
-  );
+  background-image: linear-gradient(to right,
+      var(--dflgold),
+      var(--dflblackgray));
   transform: skew(-45deg);
   margin-left: 20px;
   border: 1px solid var(--dflgold);
@@ -323,11 +316,9 @@ h1 span {
 
 .silverTitle {
   width: 50%;
-  background-image: linear-gradient(
-    to right,
-    var(--dflsilver),
-    var(--dflblackgray)
-  );
+  background-image: linear-gradient(to right,
+      var(--dflsilver),
+      var(--dflblackgray));
   transform: skew(-45deg);
   margin-left: 20px;
   border: 1px solid var(--dflsilver);
@@ -341,11 +332,9 @@ h1 span {
 .bronzeTitle {
   width: 50%;
   color: var(--dflblack);
-  background-image: linear-gradient(
-    to right,
-    var(--dflbronze),
-    var(--dflblackgray)
-  );
+  background-image: linear-gradient(to right,
+      var(--dflbronze),
+      var(--dflblackgray));
   transform: skew(-45deg);
   margin-left: 20px;
   border: 1px solid var(--dflbronze);
@@ -354,6 +343,26 @@ h1 span {
 .bronzeTitle p {
   margin-left: 30px;
   transform: skew(45deg);
+}
+
+.inactiveTitle {
+  width: 50%;
+  color: var(--dflgray);
+  background-image: linear-gradient(to right,
+      var(--dflblackgraygray),
+      var(--dflblackgray));
+  transform: skew(-45deg);
+  margin-left: 20px;
+  border: 1px solid var(--dflblackgraygray);
+}
+
+.inactiveTitle p {
+  margin-left: 30px;
+  transform: skew(45deg);
+}
+
+.inactiveTable {
+  color: var(--dflgray);
 }
 
 .downIcon {
@@ -377,21 +386,37 @@ table {
   margin-left: 50px;
   margin-top: 10px;
   margin-bottom: 30px;
-  width: calc(100% - 100px); /*100% of parent, minus 50px on each side */
+  width: calc(100% - 100px);
+  /*100% of parent, minus 50px on each side */
   border: 1px solid var(--dflgray);
 }
 
-table td {
+/* Regular division tables */
+.regTable td {
   color: var(--dflwhite);
 }
 
-table th {
+.regTable th {
   color: var(--dflwhite);
   background-color: var(--dflblackgray);
   height: 30px;
   text-align: left;
   border-bottom: 1px dashed var(--dflwhite);
 }
+
+/* Inactive division table */
+.inactiveTable td {
+  color: var(--dflgray);
+}
+
+.inactiveTable th {
+  color: var(--dflgray);
+  background-color: var(--dflblackgray);
+  height: 30px;
+  text-align: left;
+  border-bottom: 1px dashed var(--dflwhite);
+}
+
 
 table tr:nth-child(odd) {
   background-color: var(--dflblackgraygray);
@@ -444,12 +469,10 @@ table tr:nth-child(even) {
 
 .listBreaker {
   height: 3px;
-  background-image: linear-gradient(
-    to right,
-    var(--dflblack),
-    var(--dflred),
-    var(--dflblack)
-  );
+  background-image: linear-gradient(to right,
+      var(--dflblack),
+      var(--dflred),
+      var(--dflblack));
   width: 75%;
   margin: auto;
   margin-top: 15px;

@@ -42,7 +42,7 @@ module.exports = async (message, client, freezeBets) => {
 	// 	command.restriction === ''
 	// ) {
 	// 	return message.author.send(
-	// 		`You must be a current player to use that command! Type '!newplayer' to start playing.`
+	// 		`You must be an active player to use that command! Type '!newplayer' to start playing.`
 	// 	);
 	// }
 

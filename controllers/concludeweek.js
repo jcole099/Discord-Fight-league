@@ -88,8 +88,9 @@ module.exports = {
 				}
 
 				let totalWinnings = 0;
-				let totalBetAmount = 0;
+				let totalBetAmount = 0; //this is used to refund player money if they have striked
 
+				//CALCULATE WINNINGS
 				//iteratate through every bet
 				for (let betString of player.activeBets) {
 					let bet = JSON.parse(betString);
@@ -100,9 +101,9 @@ module.exports = {
 					if (winnerNames.includes(bet.fighterName)) {
 						//calc bet, add to running total
 						if (odds >= 100) {
-							totalWinnings = bet.amountBet * (odds / 100);
+							totalWinnings += bet.amountBet * (odds / 100);
 						} else {
-							totalWinnings = 100 * (bet.amountBet / (odds * -1));
+							totalWinnings += 100 * (bet.amountBet / (odds * -1));
 						}
 						totalWinnings += bet.amountBet;
 					} else {

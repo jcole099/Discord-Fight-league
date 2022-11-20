@@ -19,7 +19,11 @@ module.exports = {
 			//VALIDATION
 			let userData = await Players.find({ playerID: message.author.id });
 			if (userData.length > 0) {
-				return message.author.send('You are already an active player!');
+				if (userData[0].division === 'Inactive') {
+					return await message.author.send('**You are currently on inactive status**. If you wish to rejoin the league immediately as a Bronze player, contact an Admin. Otherwise, please wait until the end of the season for your inactive status to expire.');
+				} else {
+					return await message.author.send('You are currently an active player!');
+				}
 			}
 
 			//GET RANK VALUE (bottom of bronze division)

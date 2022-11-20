@@ -1,5 +1,6 @@
 import React from 'react';
 import Table from '../components/Table.js';
+import InactiveTable from '../components/InactiveTable.js';
 
 function Rankings({ players }) {
 	let eliteArr = [];
@@ -8,6 +9,7 @@ function Rankings({ players }) {
 	let goldArr = [];
 	let silverArr = [];
 	let bronzeArr = [];
+	let inactiveArr = [];
 
 	//Place players in their assigned division arrays
 	const divideAndSort = (players) => {
@@ -26,6 +28,8 @@ function Rankings({ players }) {
 				insertSorted(silverArr, element);
 			} else if (element.division === 'Bronze') {
 				insertSorted(bronzeArr, element);
+			} else if (element.division === 'Inactive') {
+				inactiveArr.push(element);
 			}
 		});
 	};
@@ -98,6 +102,15 @@ function Rankings({ players }) {
 					</p>
 				</div>
 				<Table players={bronzeArr} specialTier={3} />
+			</div>
+
+			<div className="inactive">
+				<div className="inactiveTitle">
+					<p>
+						<b>Inactive</b>
+					</p>
+				</div>
+				<InactiveTable players={inactiveArr} />
 			</div>
 		</article>
 	);

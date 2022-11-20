@@ -23,9 +23,14 @@ function Table({ players, specialTier }) {
 	if (specialTier === 3) {
 		rankDownNum = -1;
 	}
+	//Inactive division, no delimiters
+	if (specialTier === 4) {
+		rankUpNum = -1;
+		rankDownNum = -1;
+	}
 
 	return (
-		<table>
+		<table className='regTable'>
 			<thead className="thead">
 				<tr>
 					<th>Rank</th>
