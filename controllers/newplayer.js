@@ -1,7 +1,7 @@
 const Players = require('../models/Players');
 module.exports = {
 	name: 'newplayer',
-	description: 'Creates a new player',
+	description: 'Join the league as a new player',
 	restriction: '',
 	dm: false,
 	args: 0,
@@ -20,9 +20,13 @@ module.exports = {
 			let userData = await Players.find({ playerID: message.author.id });
 			if (userData.length > 0) {
 				if (userData[0].division === 'Inactive') {
-					return await message.author.send('**You are currently on inactive status**. If you wish to rejoin the league immediately as a Bronze player, contact an Admin. Otherwise, please wait until the end of the season for your inactive status to expire.');
+					return await message.author.send(
+						'**You are currently on inactive status**. If you wish to rejoin the league immediately as a Bronze player, contact an Admin. Otherwise, please wait until the end of the season for your inactive status to expire.'
+					);
 				} else {
-					return await message.author.send('You are currently an active player!');
+					return await message.author.send(
+						'You are currently an active player!'
+					);
 				}
 			}
 
