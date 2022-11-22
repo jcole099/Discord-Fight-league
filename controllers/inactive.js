@@ -7,7 +7,7 @@ module.exports = {
 	name: 'inactive',
 	description: 'Sets your current status to inactive for the remainder of the season. WARNING: You will not be able to participate until the next season and will be deranked a division',
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 0,
 	usage: '',
 	async execute(

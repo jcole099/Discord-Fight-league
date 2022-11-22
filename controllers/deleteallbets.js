@@ -5,7 +5,7 @@ module.exports = {
 	name: 'deleteallbets',
 	description: 'Deletes all current bets',
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 0,
 	usage: '',
 	async execute(

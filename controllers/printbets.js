@@ -6,7 +6,7 @@ module.exports = {
 	name: 'printbets',
 	description: 'Prints all active bets',
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 0,
 	usage: '',
 	async execute(

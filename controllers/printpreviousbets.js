@@ -3,9 +3,9 @@ const Players = require('../models/Players');
 module.exports = {
 	name: 'printpreviousbets',
 	description:
-		"View a player's bets from the previous event (case sensitive). Do not include a user name to view your own previous bets.",
+		"View a player's bets from the previous event (case sensitive). Optionally: do not include a player name to view your own previous bets.",
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 0,
 	usage: '<player_name>',
 	async execute(

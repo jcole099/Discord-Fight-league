@@ -6,7 +6,7 @@ const sortLinesHelper = require('../helpers/sortLinesHelper');
 module.exports = {
 	name: 'createline',
 	description: 'Creates a betting line',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 6,
 	usage:

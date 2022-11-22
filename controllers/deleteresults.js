@@ -1,3 +1,6 @@
+//This is executed as part of the end of week commands
+//Needs to be executed prior to selecting winners
+
 const Bettinglines = require('../models/Bettinglines');
 const Linesneedingresults = require('../models/Linesneedingresults');
 const Leaguestatus = require('../models/Leaguestatus');
@@ -7,7 +10,7 @@ module.exports = {
 	name: 'deleteresults',
 	description:
 		'Deletes all results information. Places a fresh copy of the bettinglines into Linesneedingresults',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 0,
 	usage: '',

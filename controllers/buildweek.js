@@ -18,7 +18,7 @@ module.exports = {
 	name: 'buildweek',
 	description:
 		'DEVELOPMENT: Simulates all activity during a week. Calls: !buildbets, !deleteresults, !selectwinner (3x: 1, 2, 4), !concludeweek',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 0,
 	usage: '',

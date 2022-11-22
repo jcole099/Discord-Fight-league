@@ -2,7 +2,7 @@ module.exports = {
 	name: 'calc',
 	description: 'A tool for calculating the total return on a bet',
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 2,
 	usage: '<bet_amount> <odds>',
 	async execute(

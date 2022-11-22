@@ -11,7 +11,7 @@ const getPrevDivision = require('../helpers/getPrevDivision');
 module.exports = {
 	name: 'concludeseason',
 	description: 'Restructures league rankings.',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 0,
 	usage: '',

@@ -3,8 +3,8 @@ const Players = require('../models/Players');
 module.exports = {
 	name: 'bank',
 	description: "Returns the amount left in a player's bank",
-	restriction: 'admin',
-	dm: false,
+	restriction: '',
+	dm: true,
 	args: 0,
 	usage: '',
 	async execute(

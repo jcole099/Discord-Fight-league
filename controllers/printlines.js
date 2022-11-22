@@ -4,7 +4,7 @@ module.exports = {
 	name: 'printlines',
 	description: 'Print all active betting lines',
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 0,
 	usage: '',
 	async execute(

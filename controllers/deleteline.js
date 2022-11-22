@@ -4,7 +4,7 @@ const sortLinesHelper = require('../helpers/sortLinesHelper');
 module.exports = {
 	name: 'deleteline',
 	description: 'Deletes a betting line',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 1,
 	usage: '<index_number>',

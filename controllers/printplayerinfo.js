@@ -4,9 +4,9 @@ module.exports = {
 	name: 'printplayerinfo',
 	description:
 		"View a player's database record.",
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
-	args: 0,
+	args: 1,
 	usage: '<player_id>',
 	async execute(
 		message,

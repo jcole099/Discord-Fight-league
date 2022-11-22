@@ -2,7 +2,7 @@ module.exports = {
 	name: 'freezestatus',
 	description: 'Returns the status of betting freeze',
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 0,
 	usage: '',
 	async execute(

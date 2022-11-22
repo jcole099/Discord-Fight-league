@@ -1,8 +1,10 @@
+//TODO: implement admin vs user distinction
+
 module.exports = {
 	name: 'help',
 	description: 'Returns a detailed list of commands',
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 0,
 	usage: '',
 	async execute(

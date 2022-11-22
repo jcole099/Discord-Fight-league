@@ -7,7 +7,7 @@ module.exports = {
 	name: 'bet',
 	description: 'Adds a bet',
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 2,
 	usage: '<bet_amount> <index_number>',
 	async execute(

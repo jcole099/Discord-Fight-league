@@ -1,9 +1,10 @@
+//old command used in development to add attributes to player database data
 const Players = require('../models/Players');
 
 module.exports = {
 	name: 'buildattribute',
 	description: 'DEVELOPMENT: used to build an attribute to the database',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 0,
 	usage: '',

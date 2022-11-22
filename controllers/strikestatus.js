@@ -2,9 +2,9 @@ const Players = require('../models/Players');
 
 module.exports = {
 	name: 'strikestatus',
-	description: "Checks if the player has a strike",
+	description: "Checks if you have a strike for this season",
 	restriction: '',
-	dm: false,
+	dm: true,
 	args: 0,
 	usage: '',
 	async execute(

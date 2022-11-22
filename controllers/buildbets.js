@@ -1,3 +1,6 @@
+//IS CALLED BY BUILD WEEK
+//TODO:
+//Rename to: botsPlaceBets
 //THIS COMMAND CAN BE MODIFIED IN THE FUTURE TO ACCOMODATE BOTS\
 
 const Players = require('../models/Players');
@@ -5,8 +8,8 @@ const Bettinglines = require('../models/Bettinglines');
 
 module.exports = {
 	name: 'buildbets',
-	description: 'DEVELOPMENT: Assigns random bets to the entire league',
-	restriction: '',
+	description: 'Assigns random bets to the entire league',
+	restriction: 'admin',
 	dm: false,
 	args: 0,
 	usage: '',

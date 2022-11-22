@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'unfreezebets',
 	description: 'Unfreezes all bets',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 0,
 	usage: '',

@@ -22,7 +22,7 @@ module.exports = {
 	name: 'concludeweek',
 	description:
 		'Calculates all player earnings. Restructures player ranks within divisions.',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 0,
 	usage: '',

@@ -6,7 +6,7 @@ module.exports = {
 	name: 'selectwinner',
 	description:
 		'Sets the winner of a fight. Input 0 for index to print lines that still need a result',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 1,
 	usage: '<index_number>',

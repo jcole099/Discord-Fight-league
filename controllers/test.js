@@ -1,7 +1,9 @@
+//TODO: MOVE TO devTools BEFORE DEPLOYMENT
+
 module.exports = {
 	name: 'test',
-	description: 'Used for misc. testing',
-	restriction: '',
+	description: 'DEVELOPMENT: Used for misc. testing',
+	restriction: 'admin',
 	dm: false,
 	args: 0,
 	usage: '',

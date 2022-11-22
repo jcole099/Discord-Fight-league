@@ -3,7 +3,7 @@ const Bettinglines = require('../models/Bettinglines');
 module.exports = {
 	name: 'deletealllines',
 	description: 'Deletes all documents in the active betting lines collection',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 0,
 	usage: '',

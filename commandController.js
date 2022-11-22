@@ -55,7 +55,9 @@ module.exports = async (message, client, freezeBets) => {
 		return message.channel.send(reply);
 	}
 	
+	
 	//ADMIN COMMAND
+	//catches any admin commands not being issued in admin channel
 	if (command.restriction === 'admin') {
 		//MUST BE USED IN ADMIN CHANNEL
 		if (message.channel.id !== process.env.DISCORD_ADMINROOMID) {

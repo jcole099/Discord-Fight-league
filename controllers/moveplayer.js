@@ -5,8 +5,8 @@ const buildRanksHelper = require('../helpers/buildRanksHelper');
 
 module.exports = {
 	name: 'moveplayer',
-	description: 'Moves a player into another division',
-	restriction: '',
+	description: 'Manually moves a player into another division',
+	restriction: 'admin',
 	dm: false,
 	args: 2,
 	usage: '<player_id> <division>',
