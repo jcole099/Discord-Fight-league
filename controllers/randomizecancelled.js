@@ -9,9 +9,9 @@ const Bettinglines = require('../models/Bettinglines');
 const sortActiveBetsHelper = require('../helpers/sortActiveBetsHelper');
 
 module.exports = {
-	name: 'pickcancelled',
+	name: 'randomizecancelled',
 	description:
-		'Iterates through league -> replaces bets that have been cancelled with another random bet of same value',
+		'Replaces bets that have been cancelled with another random bet of same value',
 	restriction: 'admin',
 	dm: false,
 	args: 0,
