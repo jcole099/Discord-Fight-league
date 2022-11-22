@@ -25,7 +25,6 @@ module.exports = {
 		adminRoom
 	) {
 		try {
-
 			let userData = await Players.find();
 			let curSeason = await Leaguestatus.find();
 			curSeason = curSeason[0].season;
@@ -61,8 +60,6 @@ module.exports = {
 					player.bank = 1250;
 					player.movement = 0;
 
-
-
 					// SET NEW DIVISION
 					let curDivisionCount = 0;
 					if (player.division === 'Elite') {
@@ -78,24 +75,26 @@ module.exports = {
 					} else if (player.division === 'Bronze') {
 						curDivisionCount = bronzeCount;
 					}
-					
+
 					player.division = calcNewDivision(
 						player.division,
 						curDivisionCount,
 						player.rank
 					);
-
 				} else {
 					//REINSTATE INACTIVE PLAYERS
 					player.strike = false;
 					player.startingBank = 1250;
 					player.bank = 1250;
 					player.movement = 0;
-					player.division = inactiveNewDivision(player)
+					player.division = inactiveNewDivision(player);
+					player.activeBets = [];
 
 					//TODO: Send inactive player a message informing them that they are active
 					const inactiveGuy = await myGuild.members.fetch(player.playerID);
-					await inactiveGuy.send('Your player status has changed to: **Active**\nA new season has started and all previously inactive players are now active. If you wish to discontinue playing, you do not need to do anything - you will automatically be removed from the league at the end of the second week. Alternatively, you may go inactive again if you wish.');
+					await inactiveGuy.send(
+						'Your player status has changed to: **Active**\nA new season has started and all previously inactive players are now active. If you wish to discontinue playing, you do not need to do anything - you will automatically be removed from the league at the end of the second week. Alternatively, you may go inactive again if you wish.'
+					);
 				}
 			}
 
@@ -128,14 +127,19 @@ module.exports = {
 
 					//SET PLAYER DISCORD ROLES
 					if (orderedDivPlayers[index].isHuman) {
-						const someGuy = await myGuild.members.fetch(orderedDivPlayers[index].playerID);
+						const someGuy = await myGuild.members.fetch(
+							orderedDivPlayers[index].playerID
+						);
 
 						//Check if player was not inactive last season
-						if (await someGuy.roles.cache.find(role => role.name === 'Players')) {
+						if (
+							await someGuy.roles.cache.find((role) => role.name === 'Players')
+						) {
 							//IS ACTIVE PLAYER
 							//Remove last division role
 							const oldDivisionRole = await myGuild.roles.cache.find(
-								(role) => role.name === getPrevDivision(orderedDivPlayers[index])
+								(role) =>
+									role.name === getPrevDivision(orderedDivPlayers[index])
 							);
 							await someGuy.roles.remove(oldDivisionRole);
 
@@ -156,7 +160,6 @@ module.exports = {
 								(role) => role.name === orderedDivPlayers[index].division
 							);
 							await someGuy.roles.add(newDivisionRole);
-							
 						}
 					}
 				}

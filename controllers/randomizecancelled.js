@@ -2,8 +2,11 @@
 //Should be one of the first main functions performed, after Freeze Bets has been issued.
 
 //CURRENT BEHAVIOR:
-//  the random bet could be another bet on an already bet fighter
-//  the random bet could be on an opponent of an already bet fighter
+//  Creates a pool of available bets
+//	Randomly picks a bet from pool
+//	deletes line from pool and opponents line
+//	if no other lines are available in pool....
+//		selects a dub or opponent bet
 const Players = require('../models/Players');
 const Bettinglines = require('../models/Bettinglines');
 const sortActiveBetsHelper = require('../helpers/sortActiveBetsHelper');
@@ -130,13 +133,6 @@ module.exports = {
 
 						//sort bets... probably pointless
 						player.activeBets = sortActiveBetsHelper(player.activeBets);
-
-						//FOR TRUE UNIQUENESS:
-						//would need to get betterlines
-						//delete line and opponent for every bet
-						//select randomly from leftover lines
-						//this wouldn't work if the user placed bets on all lines
-						//In that situation, would need a dup or opponent bet
 					}
 				}
 			}

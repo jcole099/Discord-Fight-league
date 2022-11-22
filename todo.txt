@@ -35,6 +35,8 @@ ADMIN COMMAND DISTINCTION
     force admins to use admins channel
     !help command lists admin commands vs regular commands
 
+Randomize cancelled bets
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TODO: Longer term
 Edit pickcancelled.js
