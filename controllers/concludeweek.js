@@ -48,6 +48,11 @@ module.exports = {
 			//ASSIGN NEW BANK DATA, PREVIOUSBETS, PREVIOUSRANK
 			for (let i = userData.length - 1; i >= 0; i--) {
 				let player = userData[i];
+				//Skip inactive players
+				if (player.division === 'Inactive') {
+					continue;
+				}
+				
 				let playerHasStriked = false;
 
 				//CHECK FOR BETTING GUIDELINE ADHERENCE
@@ -190,7 +195,6 @@ module.exports = {
 			}
 
 			// Increment week in league info
-			//TODO: COMMENTED OUT FOR DEVELOPMENT TESTING
 			leagueInfo[0].week = leagueInfo[0].week + 1;
 			await leagueInfo[0].save();
 

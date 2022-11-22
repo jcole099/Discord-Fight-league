@@ -1,3 +1,5 @@
+//DELETES ALL ROLES, INCLUDING ADMIN
+
 const Players = require('../models/Players');
 const buildRanksHelper = require('../helpers/buildRanksHelper');
 
@@ -32,10 +34,24 @@ module.exports = {
 				);
 			}
 
-			//Remove roles
-			const someGuy = await myGuild.members.fetch(args[0]);
-			const allRoles = await message.guild.roles.cache;
-			await someGuy.roles.remove(allRoles);
+			//Remove Discord Roles
+			//if player is inactive, no roles need to be removed (already removed)
+			if (userData.division !== 'Inactive') {
+				const someGuy = await myGuild.members.fetch(args[0]);
+
+				//remove players role
+				const playersRole = await myGuild.roles.cache.find(
+					(role) => role.name === 'Players'
+				);
+				await someGuy.roles.remove(playersRole);
+
+				//Remove division role
+				const divisionRole = await myGuild.roles.cache.find(
+					(role) => role.name === userData.division
+				);
+				await someGuy.roles.remove(divisionRole);
+			}
+
 
 			//delete data
 			await Players.deleteOne({ playerID: args[0] });

@@ -1,6 +1,7 @@
 const Players = require('../models/Players');
 const convertRankToPrevFormat = require('../helpers/convertRankToPrevFormat');
 const Leaguestatus = require('../models/Leaguestatus');
+const buildRanksHelper = require('../helpers/buildRanksHelper')
 
 module.exports = {
 	name: 'inactive',
@@ -20,16 +21,26 @@ module.exports = {
 	) {
 		try {
 			let player = await Players.findOne({ playerID: message.author.id });
+			let oldDivision = player.division
 
             //Store current division in rankingsHistory
             let curSeason = await Leaguestatus.find();
 			curSeason = curSeason[0].season;
             player.rankingHistory.push(convertRankToPrevFormat(curSeason, player.division, player.rank));
 
-            //Remove roles
+
+			//Remove Players role
 			const someGuy = await myGuild.members.fetch(message.author.id);
-			const allRoles = await message.guild.roles.cache;
-			await someGuy.roles.remove(allRoles);
+			const playersRole = await myGuild.roles.cache.find(
+				(role) => role.name === 'Players'
+			);
+			await someGuy.roles.remove(playersRole);
+
+            //Remove division role
+			const divisionRole = await myGuild.roles.cache.find(
+				(role) => role.name === player.division
+			);
+			await someGuy.roles.remove(divisionRole);
             
             
             //Set division to innactive
@@ -37,7 +48,10 @@ module.exports = {
 
             await player.save();
 
+			//Re rank leaving division
+			buildRanksHelper(oldDivision);
 
+			return await message.channel.send('**You have been placed on the inactive roster**.\nYour status will automatically be set to active at the start of the next season.');
 		} catch (err) {
 			console.error(err.message);
 			return await message.channel.send(

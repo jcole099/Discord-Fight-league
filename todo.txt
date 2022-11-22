@@ -1,27 +1,4 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TODO:
-TEMP LEAVE
-    //place them on inactive division until the end of season
-    //reactivate them on start of next season
-    place player in inactive division
-    remove roles from discord
-
-    TODO:
-    conclude season -> reinstate active players
-        set player's cur season rank to rankingHistory last -1
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -35,6 +12,23 @@ BUG: MUST CHANGE USER DISCORD ROLES IN CONCLUDE SEASON
 BUG: BUILD WEEK NOT ASSIGNING CORRECT WINNINGS? -> Fixed
 
 CHATBOT COMMAND: GET PLAYER INFO (returns database object)
+
+getPrevDivision Helper
+inactiveNewDivision Helper
+
+TEMP LEAVE
+    //place them on inactive division until the end of season
+    //reactivate them on start of next season
+    place player in inactive division
+    remove roles from discord
+    rerank division leaving
+    only delete old season role
+    conclude week -> prevent inactive players from getting strikes
+    conclude season -> reinstate active players
+        set player's cur season rank to rankingHistory last -1
+        ONLY DELETE OLD SEASON ROLE, NOT ALL ROLES (to prevent removal of admin role)
+        send inactive player a message
+    !Deleteplayer removes all roles -> fixed, only removes Players and division role
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TODO: Longer term

@@ -5,6 +5,8 @@ const Leaguestatus = require('../models/Leaguestatus');
 const convertRankToPrevFormat = require('../helpers/convertRankToPrevFormat');
 const calcNewDivision = require('../helpers/calcNewDivision');
 const resolveTiesHelper = require('../helpers/resolveTiesHelper');
+const inactiveNewDivision = require('../helpers/inactiveNewDivision');
+const getPrevDivision = require('../helpers/getPrevDivision');
 
 module.exports = {
 	name: 'concludeseason',
@@ -23,8 +25,6 @@ module.exports = {
 		adminRoom
 	) {
 		try {
-			let oldDivisionName = ''
-			let newDivisionName = ''
 
 			let userData = await Players.find();
 			let curSeason = await Leaguestatus.find();
@@ -49,37 +49,54 @@ module.exports = {
 				division: 'Bronze',
 			}).countDocuments();
 
+			//RESET attributes for all players
 			for (let player of userData) {
-				player.rankingHistory.push(
-					convertRankToPrevFormat(curSeason, player.division, player.rank)
-				);
-				oldDivisionName = player.division
-				player.strike = false;
-				player.startingBank = 1250;
-				player.bank = 1250;
-				player.movement = 0;
+				//for all ACTIVE players
+				if (player.division !== 'Inactive') {
+					player.rankingHistory.push(
+						convertRankToPrevFormat(curSeason, player.division, player.rank)
+					);
+					player.strike = false;
+					player.startingBank = 1250;
+					player.bank = 1250;
+					player.movement = 0;
 
-				// SET NEW DIVISION
-				let curDivisionCount = 0;
-				if (player.division === 'Elite') {
-					curDivisionCount = eliteCount;
-				} else if (player.division === 'Masters') {
-					curDivisionCount = mastersCount;
-				} else if (player.division === 'Diamond') {
-					curDivisionCount = diamondCount;
-				} else if (player.division === 'Gold') {
-					curDivisionCount = goldCount;
-				} else if (player.division === 'Silver') {
-					curDivisionCount = silverCount;
-				} else if (player.division === 'Bronze') {
-					curDivisionCount = bronzeCount;
+
+
+					// SET NEW DIVISION
+					let curDivisionCount = 0;
+					if (player.division === 'Elite') {
+						curDivisionCount = eliteCount;
+					} else if (player.division === 'Masters') {
+						curDivisionCount = mastersCount;
+					} else if (player.division === 'Diamond') {
+						curDivisionCount = diamondCount;
+					} else if (player.division === 'Gold') {
+						curDivisionCount = goldCount;
+					} else if (player.division === 'Silver') {
+						curDivisionCount = silverCount;
+					} else if (player.division === 'Bronze') {
+						curDivisionCount = bronzeCount;
+					}
+					
+					player.division = calcNewDivision(
+						player.division,
+						curDivisionCount,
+						player.rank
+					);
+
+				} else {
+					//REINSTATE INACTIVE PLAYERS
+					player.strike = false;
+					player.startingBank = 1250;
+					player.bank = 1250;
+					player.movement = 0;
+					player.division = inactiveNewDivision(player)
+
+					//TODO: Send inactive player a message informing them that they are active
+					const inactiveGuy = await myGuild.members.fetch(player.playerID);
+					await inactiveGuy.send('Your player status has changed to: **Active**\nA new season has started and all previously inactive players are now active. If you wish to discontinue playing, you do not need to do anything - you will automatically be removed from the league at the end of the second week. Alternatively, you may go inactive again if you wish.');
 				}
-				player.division = calcNewDivision(
-					player.division,
-					curDivisionCount,
-					player.rank
-				);
-				newDivisionName = player.division
 			}
 
 			//rerank divison based on Last Season Rank (the whole division will be a tie for player.startingBank)
@@ -109,17 +126,38 @@ module.exports = {
 					//SAVE PLAYER DATA
 					await orderedDivPlayers[index].save();
 
-					//TODO: SET PLAYER ROLES
+					//SET PLAYER DISCORD ROLES
 					if (orderedDivPlayers[index].isHuman) {
-						const oldDivision = await message.guild.roles.cache.find(
-							(role) => role.name === oldDivisionName
-						);
-						const newDivision = await message.guild.roles.cache.find(
-							(role) => role.name === newDivisionName
-						);
-						const playerToBeMoved = await myGuild.members.fetch(orderedDivPlayers[index].playerID)
-						await playerToBeMoved.roles.add(newDivision);
-						await playerToBeMoved.roles.remove(oldDivision);
+						const someGuy = await myGuild.members.fetch(orderedDivPlayers[index].playerID);
+
+						//Check if player was not inactive last season
+						if (await someGuy.roles.cache.find(role => role.name === 'Players')) {
+							//IS ACTIVE PLAYER
+							//Remove last division role
+							const oldDivisionRole = await myGuild.roles.cache.find(
+								(role) => role.name === getPrevDivision(orderedDivPlayers[index])
+							);
+							await someGuy.roles.remove(oldDivisionRole);
+
+							//Add new division role
+							const newDivisionRole = await myGuild.roles.cache.find(
+								(role) => role.name === orderedDivPlayers[index].division
+							);
+							await someGuy.roles.add(newDivisionRole);
+						} else {
+							//IS INACTIVE PLAYER
+							//ADD Player Role
+							const playersRole = await myGuild.roles.cache.find(
+								(role) => role.name === 'Players'
+							);
+							await someGuy.roles.add(playersRole);
+							//Add division role
+							const newDivisionRole = await myGuild.roles.cache.find(
+								(role) => role.name === orderedDivPlayers[index].division
+							);
+							await someGuy.roles.add(newDivisionRole);
+							
+						}
 					}
 				}
 			}

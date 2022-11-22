@@ -107,7 +107,7 @@ function Rankings({ players }) {
 			<div className="inactive">
 				<div className="inactiveTitle">
 					<p>
-						<b>Inactive</b>
+						<b>Inactive</b> Roster
 					</p>
 				</div>
 				<InactiveTable players={inactiveArr} />

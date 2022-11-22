@@ -1,5 +1,6 @@
 module.exports = (division, divisionCount, rank) => {
 	try {
+		//FOR ALL ACTIVE DIVISIONS
 		if (division === 'Elite') {
 			if (rank <= 7) {
 				return 'Elite';
@@ -61,7 +62,4 @@ module.exports = (division, divisionCount, rank) => {
 	}
 };
 
-// let rankUpNum = Math.floor(players.length * 0.33);
-// let rankDownNum = players.length - rankUpNum;
-// rankUpNum -= 1;
-19 - Math.floor(19 * 0.33);
+

@@ -1,6 +1,6 @@
 //TAKES A STRING INPUT FOR THE NAME OF THE DIVISION
 
-//IS CALLED BY DELETEPLAYER
+//IS CALLED BY DELETEPLAYER, INACTIVE
 const Players = require('../models/Players');
 const resolveTiesHelper = require('./resolveTiesHelper');
 
