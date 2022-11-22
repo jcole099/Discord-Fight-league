@@ -26,25 +26,25 @@ module.exports = async (message, client, freezeBets) => {
 	//load command data into var 'command'
 	const command = client.commands.get(commandName);
 
-	//GLOBAL VARIABLES TODO:
+	//GLOBAL VARIABLES
 	const myGuild = await client.guilds.cache.get(
 		`${process.env.DISCORD_GUILDID}`
 	); //get server information
 	warRoom = client.channels.cache.get(`${process.env.DISCORD_WARROOMID}`);
 	adminRoom = client.channels.cache.get(`${process.env.DISCORD_ADMINROOMID}`);
 
-	//TODO: ANYONE CAN USE COMMANDS ATM
+
 	//Ignore all commands if user doesn't have the player role, UNLESS it is an admin command
-	// const someGuy = await myGuild.members.fetch(message.author.id);
-	// if (
-	// 	!someGuy._roles.includes(`${process.env.DISCORD_PLAYERROLEID}`) &&
-	// 	command.name !== 'newplayer' &&
-	// 	command.restriction === ''
-	// ) {
-	// 	return message.author.send(
-	// 		`You must be an active player to use that command! Type '!newplayer' to start playing.`
-	// 	);
-	// }
+	const someGuy = await myGuild.members.fetch(message.author.id);
+	if (
+		!someGuy._roles.includes(`${process.env.DISCORD_PLAYERROLEID}`) &&
+		command.name !== 'newplayer' &&
+		command.restriction === ''
+	) {
+		return message.author.send(
+			`You must be an active player to use that command! Type '!newplayer' to start playing.`
+		);
+	}
 
 	//ensures that appropriate arguments are included with the command. If not, sends the user a reply with proper syntax
 	if (command.args && args.length != command.args) {
@@ -54,9 +54,15 @@ module.exports = async (message, client, freezeBets) => {
 		}
 		return message.channel.send(reply);
 	}
-
-	//TODO: Check for admin restriction, admin commands are not allowed in DMs
-
+	
+	//ADMIN COMMAND
+	if (command.restriction === 'admin') {
+		//MUST BE USED IN ADMIN CHANNEL
+		if (message.channel.id !== process.env.DISCORD_ADMINROOMID) {
+			return await message.author.send('Admin commands can only be issued in the **Admins channel**')
+		}
+	}
+			
 	//Check for dm channel restriction
 	if (command.dm && message.guild != null) {
 		try {
@@ -65,7 +71,7 @@ module.exports = async (message, client, freezeBets) => {
 			console.log('Error deleting message!');
 		}
 		return await message.author.send(
-			`!${command.name} should be typed in this DM channel.`
+			`**!${command.name}** should be typed in this DM channel.`
 		);
 	}
 

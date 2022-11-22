@@ -7,7 +7,7 @@ module.exports = {
 	name: 'deleteplayer',
 	description:
 		'Removes a player from the league. All betting history will be permanently erased.',
-	restriction: '',
+	restriction: 'admin',
 	dm: false,
 	args: 1,
 	usage: '<player_id>',
