@@ -1,8 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TODO:
 
-ADMIN COMMAND DISTINCTION
-    force admins to use admins channel
-    !help command lists admin commands vs regular commands
+
 
 
 
@@ -33,8 +31,13 @@ TEMP LEAVE
         send inactive player a message
     !Deleteplayer removes all roles -> fixed, only removes Players and division role
 
+ADMIN COMMAND DISTINCTION
+    force admins to use admins channel
+    !help command lists admin commands vs regular commands
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TODO: Longer term
+Edit pickcancelled.js
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AFTER CS469

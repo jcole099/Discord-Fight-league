@@ -10,7 +10,7 @@ module.exports = (activeBetsArray, message) => {
 			if (nameA > nameB) {
 				return 1;
 			}
-			// names must be equal
+			// names are equal
 			return 0;
 		});
 

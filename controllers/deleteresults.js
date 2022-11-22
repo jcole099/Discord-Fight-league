@@ -1,3 +1,4 @@
+//CREATES A CLEAN COPY OF BETTINGLINES INTO LINESNEEDINGRESULTS
 //This is executed as part of the end of week commands
 //Needs to be executed prior to selecting winners
 
