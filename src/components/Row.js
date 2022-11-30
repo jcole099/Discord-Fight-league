@@ -103,6 +103,54 @@ function Row({ player, rank, rankup, rankdown }) {
 							div = 'Bronze';
 					}
 					lastRank = lastRank.substring(1); //lastRank now includes the ranking within the division
+					if (div === 'Elite' && lastRank == 1) {
+						return (
+							<div className="belt">
+								<img src="./img/belt_elite.png" alt="Elite Champion"></img>
+								<span>&nbsp;Elite Champion</span>
+							</div>
+						);
+					}
+					if (div === 'Masters' && lastRank == 1) {
+						return (
+							<div className="belt">
+								<img src="./img/belt_masters.png" alt="Masters Champion"></img>
+								<span>&nbsp;Masters Champion</span>
+							</div>
+						);
+					}
+					if (div === 'Diamond' && lastRank == 1) {
+						return (
+							<div className="belt">
+								<img src="./img/belt_diamond.png" alt="Diamond Champion"></img>
+								<span>&nbsp;Diamond Champion</span>
+							</div>
+						);
+					}
+					if (div === 'Gold' && lastRank == 1) {
+						return (
+							<div className="belt">
+								<img src="./img/belt_gold.png" alt="Gold Champion"></img>
+								<span>&nbsp;Gold Champion</span>
+							</div>
+						);
+					}
+					if (div === 'Silver' && lastRank == 1) {
+						return (
+							<div className="belt">
+								<img src="./img/belt_silver.png" alt="Silver Champion"></img>
+								<span>&nbsp;Silver Champion</span>
+							</div>
+						);
+					}
+					if (div === 'Bronze' && lastRank == 1) {
+						return (
+							<div className="belt">
+								<img src="./img/belt_bronze.png" alt="Bronze Champion"></img>
+								<span>&nbsp;Bronze Champion</span>
+							</div>
+						);
+					}
 
 					return (
 						<span>

@@ -10,6 +10,11 @@ import Navigation from './components/Navigation.js';
 
 //Import Pages
 import Rankings from './pages/Rankings.js';
+import HowToPlay from './pages/HowToPlay.js';
+import Rules from './pages/Rules.js';
+import Donate from './pages/Donate.js';
+import WhatIsDFL from './pages/WhatIsDFL.js';
+import Discord from './pages/Discord.js';
 
 function App() {
 	const year = new Date().getFullYear();
@@ -47,6 +52,11 @@ function App() {
 			<main className="Appmain">
 				<Routes>
 					<Route path="/" exact element={<Rankings players={players} />} />
+					<Route path="/rules" exact element={<Rules />} />
+					<Route path="/donate" exact element={<Donate />} />
+					<Route path="/howtoplay" exact element={<HowToPlay />} />
+					<Route path="/whatisdfl" exact element={<WhatIsDFL />} />
+					<Route path="/discord" exact element={<Discord />} />
 				</Routes>
 			</main>
 			<footer className="Appfooter">

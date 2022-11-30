@@ -2,7 +2,7 @@
 
 module.exports = {
 	name: 'help',
-	description: 'Returns a detailed list of commands',
+	description: 'Displays a detailed list of commands',
 	restriction: '',
 	dm: true,
 	args: 0,

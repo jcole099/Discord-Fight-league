@@ -155,12 +155,13 @@ h2 {
   margin-left: 2.5rem;
 }
 
-td {
+.regTable td {
+
   padding-right: 10px;
   max-width: 2rem;
 }
 
-th {
+.regTable th {
   padding-right: 10px;
 }
 
@@ -435,6 +436,13 @@ table tr:nth-child(even) {
 .playerRowDown {
   border-top: 0.125rem dashed var(--dflred);
 }
+.belt {
+  display: flex;
+  align-items: center;
+}
+.belt img {
+  height: 25px;
+}
 
 /*---------------------------------------------------------*/
 /* HOW TO PLAY PAGE */
@@ -476,6 +484,20 @@ table tr:nth-child(even) {
   width: 75%;
   margin: auto;
   margin-top: 15px;
+}
+
+/*---------------------------------------------------------*/
+/* RULES */
+/*---------------------------------------------------------*/
+.commandTable td {
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.commandTable .parameterNone {
+  color:rgb(95, 95, 95);
 }
 
 /*---------------------------------------------------------*/

@@ -1,14 +1,11 @@
+//Forever Discord Link: https://discord.gg/cXG8HvrYMG
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 function Navigation({ clicker }) {
-	function discordLoad() {
-		// window.location.href = "https://discord.gg/8Q2eDgKdfr";
-		window.open('https://discord.gg/8Q2eDgKdfr', '_blank');
-	}
-
 	return (
 		<nav className="navBar">
 			<nav className="navBarInner">
@@ -28,15 +25,12 @@ function Navigation({ clicker }) {
 							<Link to="/whatisdfl">
 								<div className="navButton">DFL?</div>
 							</Link>
+							<Link to="/discord">
+								<div className="navButton">Discord</div>
+							</Link>
 							<Link to="/donate">
 								<div className="navButton">Donate</div>
 							</Link>
-							<div className="navButton" onClick={discordLoad}>
-								Discord
-							</div>
-							{/* <Link to="/load">
-                <div className="navButton">Load</div>
-              </Link> */}
 						</div>
 						<button className="btnMobileNavX" onClick={clicker}>
 							<AiOutlineClose className="iconMobileNav" name="close-outline" />

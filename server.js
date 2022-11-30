@@ -1,4 +1,3 @@
-//dmc_run ID: 260648339320733696
 //Hailey IP: 104.168.19.177:59110
 
 //IMPORTS
@@ -67,7 +66,7 @@ client.once('ready', () => {
 });
 client.login(process.env.DISCORDTOKEN);
 
-// CONNECT TO MONGODB
+// CONNECT TO MONGODB ATLAS
 const DB = process.env.DATABASE.replace(
 	'<PASSWORD>',
 	process.env.DATABASE_PASSWORD

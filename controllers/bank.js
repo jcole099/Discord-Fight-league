@@ -2,7 +2,7 @@ const Players = require('../models/Players');
 
 module.exports = {
 	name: 'bank',
-	description: "Returns the amount left in a player's bank",
+	description: "Displays the amount left in a player's bank",
 	restriction: '',
 	dm: true,
 	args: 0,

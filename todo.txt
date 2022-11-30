@@ -2,46 +2,6 @@
 
 
 
-
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~WORK PERFORMED PREVIOUS WEEK:
-CHATBOT COMMAND: STRIKE STATUS
-
-BUG: MUST CHANGE USER DISCORD ROLES IN CONCLUDE SEASON
-
-BUG: BUILD WEEK NOT ASSIGNING CORRECT WINNINGS? -> Fixed
-
-CHATBOT COMMAND: GET PLAYER INFO (returns database object)
-
-getPrevDivision Helper
-inactiveNewDivision Helper
-
-TEMP LEAVE
-    //place them on inactive division until the end of season
-    //reactivate them on start of next season
-    place player in inactive division
-    remove roles from discord
-    rerank division leaving
-    only delete old season role
-    conclude week -> prevent inactive players from getting strikes
-    conclude season -> reinstate active players
-        set player's cur season rank to rankingHistory last -1
-        ONLY DELETE OLD SEASON ROLE, NOT ALL ROLES (to prevent removal of admin role)
-        send inactive player a message
-    !Deleteplayer removes all roles -> fixed, only removes Players and division role
-
-ADMIN COMMAND DISTINCTION
-    force admins to use admins channel
-    !help command lists admin commands vs regular commands
-
-Randomize cancelled bets
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TODO: Longer term
-Edit pickcancelled.js
-
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AFTER CS469
 Send DMs to players who try to use commands in regular chat or aren't active players
 Build secret admin page that has tutorials for workflow
@@ -50,4 +10,4 @@ Build secret admin page that has tutorials for workflow
 Add attribute "isSmart" to Players model
 Smart bots only pick favorited fighters
 bots need to pick at least 3 primary fights, and a total of at least 1250
-Command: count total players & count human players
+Conclude season -> add/remove bots to league based on total human player count.

@@ -12,5 +12,6 @@ module.exports = {
 	plugins: ['react'],
 	rules: {
 		'react/prop-types': 'off',
+		'react/no-unescaped-entities': 'off',
 	},
 };
