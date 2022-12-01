@@ -3,6 +3,7 @@
 
 module.exports = async (message, client, freezeBets) => {
 	//ignore messages that don't start with command prefix or messages from the bot
+	let userIsAdmin = false;
 	if (!message.content.startsWith(process.env.PREFIX) || message.author.bot)
 		return;
 
@@ -39,6 +40,7 @@ module.exports = async (message, client, freezeBets) => {
 		!someGuy._roles.includes(`${process.env.DISCORD_PLAYERROLEID}`) &&
 		command.name !== 'newplayer' &&
 		command.name !== 'website' &&
+		command.name !== 'help' &&
 		command.restriction === ''
 	) {
 		return message.author.send(
