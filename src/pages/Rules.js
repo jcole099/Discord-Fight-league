@@ -231,6 +231,15 @@ function Rules() {
 						</tr>
 						<tr>
 							<td>
+								<b>!freezestatus</b>
+							</td>
+							<td className="parameterNone">None</td>
+							<td>
+								<i>Checks the freeze (betting) status of the league</i>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								<b>!help</b>
 							</td>
 							<td className="parameterNone">None</td>
