@@ -33,12 +33,12 @@ module.exports = async (message, client, freezeBets) => {
 	warRoom = client.channels.cache.get(`${process.env.DISCORD_WARROOMID}`);
 	adminRoom = client.channels.cache.get(`${process.env.DISCORD_ADMINROOMID}`);
 
-
 	//Ignore all commands if user doesn't have the player role, UNLESS it is an admin command
 	const someGuy = await myGuild.members.fetch(message.author.id);
 	if (
 		!someGuy._roles.includes(`${process.env.DISCORD_PLAYERROLEID}`) &&
 		command.name !== 'newplayer' &&
+		command.name !== 'website' &&
 		command.restriction === ''
 	) {
 		return message.author.send(
@@ -54,17 +54,18 @@ module.exports = async (message, client, freezeBets) => {
 		}
 		return message.channel.send(reply);
 	}
-	
-	
+
 	//ADMIN COMMAND
 	//catches any admin commands not being issued in admin channel
 	if (command.restriction === 'admin') {
 		//MUST BE USED IN ADMIN CHANNEL
 		if (message.channel.id !== process.env.DISCORD_ADMINROOMID) {
-			return await message.author.send('Admin commands can only be issued in the **Admins channel**')
+			return await message.author.send(
+				'Admin commands can only be issued in the **Admins channel**'
+			);
 		}
 	}
-			
+
 	//Check for dm channel restriction
 	if (command.dm && message.guild != null) {
 		try {
