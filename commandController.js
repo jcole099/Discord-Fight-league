@@ -41,6 +41,7 @@ module.exports = async (message, client, freezeBets) => {
 		command.name !== 'newplayer' &&
 		command.name !== 'website' &&
 		command.name !== 'help' &&
+		command.name !== 'printlines' &&
 		command.restriction === ''
 	) {
 		return message.author.send(
