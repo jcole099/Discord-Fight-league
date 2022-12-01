@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8b84438.css",
-    "main.js": "/static/js/main.b1eea5c8.js",
-    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "main.css": "/static/css/main.230a8731.css",
+    "main.js": "/static/js/main.c2147f49.js",
+    "static/js/787.5bfc467e.chunk.js": "/static/js/787.5bfc467e.chunk.js",
     "static/media/neuropolitical_rg.svg": "/static/media/neuropolitical_rg.91210dcba370bd194b6d.svg",
     "static/media/neuropolitical_rg.eot": "/static/media/neuropolitical_rg.62aecb32943cdc432876.eot",
     "static/media/neuropolitical_rg.ttf": "/static/media/neuropolitical_rg.2e8cf30d9e5009de28ab.ttf",
     "static/media/neuropolitical_rg.woff": "/static/media/neuropolitical_rg.51dfb132a3e611bc1df1.woff",
     "index.html": "/index.html",
-    "main.d8b84438.css.map": "/static/css/main.d8b84438.css.map",
-    "main.b1eea5c8.js.map": "/static/js/main.b1eea5c8.js.map",
-    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+    "main.230a8731.css.map": "/static/css/main.230a8731.css.map",
+    "main.c2147f49.js.map": "/static/js/main.c2147f49.js.map",
+    "787.5bfc467e.chunk.js.map": "/static/js/787.5bfc467e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8b84438.css",
-    "static/js/main.b1eea5c8.js"
+    "static/css/main.230a8731.css",
+    "static/js/main.c2147f49.js"
   ]
 }
