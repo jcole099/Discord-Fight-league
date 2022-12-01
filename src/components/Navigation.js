@@ -16,14 +16,14 @@ function Navigation({ clicker }) {
 							<Link to="/">
 								<div className="navButton">Rankings</div>
 							</Link>
+							<Link to="/whatisdfl">
+								<div className="navButton">DFL?</div>
+							</Link>
 							<Link to="/howtoplay">
 								<div className="navButton">How To Play</div>
 							</Link>
 							<Link to="/rules">
 								<div className="navButton">Rules</div>
-							</Link>
-							<Link to="/whatisdfl">
-								<div className="navButton">DFL?</div>
 							</Link>
 							<Link to="/discord">
 								<div className="navButton">Discord</div>
