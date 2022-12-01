@@ -110,6 +110,3 @@ config.env
 
 
 .gitignore
-
-package.json
-package-lock.json
