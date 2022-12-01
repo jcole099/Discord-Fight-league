@@ -50,7 +50,7 @@ module.exports = {
 				reply += `\n\n`;
 				await message.channel.send(reply);
 
-				reply = `\n\n**Player commands**:\n`;
+				reply = `. \n\n**Player commands**:\n`;
 				commands.forEach(extractUserCommands);
 				await message.channel.send(reply);
 			} else {
