@@ -44,7 +44,7 @@ function HowToPlay() {
 								src="./img/bettinglinebreakdown.png"
 								alt="Betting Line Explained"
 							></img>
-							<ol>
+							<ol type="a">
 								<li className="innerList">
 									The first segment (black underline) represents the index of
 									the betting line. We use indexes to place bets because it is

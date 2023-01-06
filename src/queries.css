@@ -1,0 +1,224 @@
+@media (max-width: 1070px) {
+    .navTitleBar h1 {
+      font-size: 2.5rem;
+    }
+    .logo {
+      height: 8rem;
+    }
+}
+/* ############################################ */
+/* Mobile NAV */
+/* ############################################ */
+@media (max-width: 906px) {
+  /* Clean up outer divs */
+  .Appheader {
+    width: 100%;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 0;
+    border-bottom: 5px solid var(--dflwhite);
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 98;
+    padding-bottom: 15px;
+    height: 75px;
+  }
+  .Appmain {
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    padding-top: 100px;
+  }
+
+  table {
+    margin-left: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .btnMobileNav {
+    display: block;
+  }
+
+  .navTitleBar {
+    display: flex;
+    margin: 0;
+  }
+
+  .navBarSpacer {
+    width: 0px;
+  }
+
+  .navBar {
+    background-image: none;
+  }
+
+  h1 {
+    display: block;
+    margin-top: 5px;
+  } 
+
+  .Appheader img {
+    display: none;
+  }
+  
+  /* configuring mobile nav menu */
+  /* Appheader navTitleBar navBar navBarInner navBarLinks L*/
+  .links {
+    background-color: var(--dflblack);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 99;
+    transition: all 0.25s;
+    align-items: center;
+
+    /* Hide element without using display: none. Cant use display none because cant add cool transition */
+    /* hide el visually */
+    opacity: 0;
+    /* make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* hide from screen readers */
+    visibility: hidden;
+  }
+
+  .navButton {
+    opacity: 0;
+  }
+  .nav-open .navButton {
+    opacity: 1;
+  }
+
+  .btnMobileNavM {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+  }
+
+  .nav-open .links {
+    position: fixed;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .nav-open .btnMobileNavX {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nav-open .iconMobileNav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .iconMobileNav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .navButton {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  .nav-open a {
+    margin-bottom: -40px;
+    animation: fadeIn 0.25s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* ############################################ */
+  /* END Mobile NAV */
+  /* ############################################ */
+
+  .belt span {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .articleDescription {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .league {
+    display: none;
+  }
+  .discordFight {
+    display: none;
+  }
+  .dfl {
+    display: block;
+    color: var(--dflred);
+  }
+}
+
+@media (max-width: 670px) {
+  tr td:last-child {
+    display: none;
+  }
+  tr th:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .subList {
+    margin-left: 1rem;
+  }
+  .secondIndent {
+    margin-left: 1rem;
+  }
+  tr td:nth-last-child(2) {
+    display: none;
+  }
+  tr th:nth-last-child(2) {
+    display: none;
+  }
+  .rulesCommand {
+    display: none;
+  }
+  .rulesCommands {
+    display:block;
+  }
+}
+
+@media (max-width: 450px) {
+  .rankingsStartingBank {
+    display: none;
+  }
+  .rankingsBank {
+    display: block;
+  }
+  .subList {
+    margin-left: 0;
+  }
+  .secondIndent {
+    margin-left: 0;
+  }
+  img {
+    transform: scale(0.8);
+    margin-left: -30px;
+  }
+}
+
+
+

@@ -1,4 +1,6 @@
+//Import styles
 import './App.css';
+import './queries.css';
 
 //Import Dependencies
 import React from 'react';
@@ -23,7 +25,6 @@ function App() {
 	const toggleClass = () => {
 		setActive(!isActive);
 	};
-
 	const getData = async () => {
 		try {
 			const response = await fetch('/players'); //returns a promise - fetch is not part of express, fetch is part of browser
@@ -41,12 +42,16 @@ function App() {
 	return (
 		<div className="App">
 			<header className={isActive ? 'Appheader nav-open' : 'Appheader'}>
-				<img src="./img/dfl_logo.png" alt="DFL Logo" className="logo"></img>
-				<div className="navTitleBar">
-					<h1>
-						<span>DISCORD FIGHT</span> LEAGUE
-					</h1>
-					<Navigation clicker={toggleClass} />
+				<div className="mainNav">
+					<img src="./img/dfl_logo.png" alt="DFL Logo" className="logo"></img>
+					<div className="navTitleBar">
+						<h1>
+							<span className="dfl">DFL</span>
+							<span className="discordFight">DISCORD FIGHT</span>
+							<span className="league"> LEAGUE</span>
+						</h1>
+						<Navigation clicker={toggleClass} />
+					</div>
 				</div>
 			</header>
 			<main className="Appmain">

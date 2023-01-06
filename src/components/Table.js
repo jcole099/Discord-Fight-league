@@ -30,12 +30,15 @@ function Table({ players, specialTier }) {
 	}
 
 	return (
-		<table className='regTable'>
+		<table className="regTable">
 			<thead className="thead">
 				<tr>
 					<th>Rank</th>
 					<th>Discord Name</th>
-					<th>Starting Bank</th>
+					<th>
+						<span className="rankingsStartingBank">Starting Bank</span>
+						<span className="rankingsBank">Bank</span>
+					</th>
 					<th>Movement</th>
 					<th>Last Season Rank</th>
 				</tr>

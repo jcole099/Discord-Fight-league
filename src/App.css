@@ -39,8 +39,8 @@
 }
 
 .iconMobileNav {
-  height: 4.8rem;
-  width: 4.8rem;
+  height: 2.8rem;
+  width: 2.8rem;
 }
 
 .iconMobileNav[name="close-outline"] {
@@ -93,6 +93,7 @@ body {
 .Appheader {
   /* border: 3px solid purple; */
   display: flex;
+  flex-direction: column;
   padding: 10px;
   background-color: var(--dflblack);
   width: 90%;
@@ -103,6 +104,12 @@ body {
   margin-bottom: 5px;
   font-size: 1rem;
 }
+
+.mainNav {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .Appmain {
   font-size: 1rem;
@@ -180,9 +187,11 @@ h1 {
   position: relative;
 }
 
-h1 span {
+h1 .discordFight {
   color: var(--dflred);
 }
+
+
 
 .navTitleBar {
   /* border: 3px solid white; */
@@ -194,7 +203,12 @@ h1 span {
   display: inline-block;
 }
 
+.navTitleBar h1 {
+  display: inline;
+}
+
 .navBar {
+  margin-top: 5px;
   padding-top: 3px;
   padding-bottom: 3px;
   background-image: linear-gradient(to right, var(--dflwhite), var(--dflblack));
@@ -203,12 +217,12 @@ h1 span {
 
 .navBarInner {
   display: flex;
+  flex-direction: row;
   background-color: var(--dflblack);
 }
 
 .navBarSpacer {
   width: 2.5rem;
-  /* border: 3px solid red; */
 }
 
 .navBarLinks {
@@ -240,9 +254,8 @@ h1 span {
   flex-direction: row;
 }
 
-.pleaseWork {
-  display: flex;
-  flex-direction: row;
+.dfl {
+  display: none;
 }
 
 /*---------------------------------------------------------*/
@@ -444,6 +457,10 @@ table tr:nth-child(even) {
   height: 25px;
 }
 
+.rankingsBank {
+  display: none;
+}
+
 /*---------------------------------------------------------*/
 /* HOW TO PLAY PAGE */
 /*---------------------------------------------------------*/
@@ -499,6 +516,9 @@ table tr:nth-child(even) {
 .commandTable .parameterNone {
   color:rgb(95, 95, 95);
 }
+.rulesCommands {
+  display: none;
+}
 
 /*---------------------------------------------------------*/
 /* WHAT IS DFL? */
@@ -549,3 +569,4 @@ table tr:nth-child(even) {
 .Appfooter span {
   display: block;
 }
+

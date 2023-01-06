@@ -151,8 +151,8 @@ function Rules() {
 						</li>
 					</ul>
 					<div className="listBreaker"></div>
-					{/* //FUTURE BOT IMPLEMENTATION
-          <h3>Bots</h3>
+					{/* //FUTURE BOT IMPLEMENTATION */}
+					<h3>Bots</h3>
 					<ul>
 						<li>
 							Rome wasn't built in a day. The league will initially be populated
@@ -161,7 +161,8 @@ function Rules() {
 							league, the bots will be phased out. Bots can be identified on the
 							Rankings page with a '(b)' at the end of their Discord Names.
 						</li>
-					</ul> */}
+					</ul>
+					<div className="listBreaker"></div>
 					<h3>Commands</h3>
 					<ul>
 						<li>
@@ -177,10 +178,17 @@ function Rules() {
 								Example #3: <b>!printpreviousbets dmc_run</b>
 							</li>
 						</li>
+						<li>
+							Use the <b>!help</b> command in Discord to receive a comprehensive
+							list of commands from ribas.
+						</li>
 					</ul>
 					<table className="commandTable">
 						<tr>
-							<th>Command</th>
+							<th>
+								<span className="rulesCommand">Command</span>
+								<span className="rulesCommands">Commands</span>
+							</th>
 							<th>Parameters</th>
 							<th>Description</th>
 						</tr>
